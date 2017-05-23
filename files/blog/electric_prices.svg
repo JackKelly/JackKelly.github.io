@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 700 400"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<desc>Produced by GNUPLOT 4.4 patchlevel 2 </desc>
+
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.244' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.244' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.244' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.244' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.244' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.244' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.244' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,339.4 L66.4,339.4 '></path>
+	<g transform="translate(58.7,343.5)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 240</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,303.1 L66.4,303.1 '></path>
+	<g transform="translate(58.7,307.2)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 260</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,266.9 L66.4,266.9 '></path>
+	<g transform="translate(58.7,271.0)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 280</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,230.6 L66.4,230.6 '></path>
+	<g transform="translate(58.7,234.7)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 300</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,194.3 L66.4,194.3 '></path>
+	<g transform="translate(58.7,198.4)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 320</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,158.1 L66.4,158.1 '></path>
+	<g transform="translate(58.7,162.2)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 340</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,121.8 L66.4,121.8 '></path>
+	<g transform="translate(58.7,125.9)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 360</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,85.6 L66.4,85.6 '></path>
+	<g transform="translate(58.7,89.7)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 380</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,49.3 L66.4,49.3 '></path>
+	<g transform="translate(58.7,53.4)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:end">
+		<text><tspan> 400</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,339.4 L74.6,347.6 '></path>
+	<g transform="translate(74.6,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 1994</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M141.5,339.4 L141.5,347.6 '></path>
+	<g transform="translate(141.5,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 1996</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M208.4,339.4 L208.4,347.6 '></path>
+	<g transform="translate(208.4,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 1998</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M275.3,339.4 L275.3,347.6 '></path>
+	<g transform="translate(275.3,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2000</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M342.2,339.4 L342.2,347.6 '></path>
+	<g transform="translate(342.2,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2002</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M409.2,339.4 L409.2,347.6 '></path>
+	<g transform="translate(409.2,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2004</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M476.1,339.4 L476.1,347.6 '></path>
+	<g transform="translate(476.1,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2006</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M543.0,339.4 L543.0,347.6 '></path>
+	<g transform="translate(543.0,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2008</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M609.9,339.4 L609.9,347.6 '></path>
+	<g transform="translate(609.9,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2010</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M676.8,339.4 L676.8,347.6 '></path>
+	<g transform="translate(676.8,368.1)" style="stroke:none; fill:rgb(0,0,0); font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan> 2012</tspan>
+		</text>
+	</g>
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,49.3 L74.6,339.4 L676.8,339.4 M676.8,49.3 M74.6,49.3 '></path>
+	<g transform="translate(16.1,194.4) rotate(270)" style="stroke:none; fill:black; font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan>£ (normalised to 2005 £)</tspan>
+		</text>
+	</g>
+	<g transform="translate(375.7,392.7)" style="stroke:none; fill:black; font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan>year</tspan>
+		</text>
+	</g>
+	<g transform="translate(375.7,28.8)" style="stroke:none; fill:black; font-family:serif; font-size:11.00pt; text-anchor:middle">
+		<text><tspan>Average annual domestic electricity prices in the UK</tspan>
+		</text>
+	</g>
+</g>
+	<a xlink:title="Plot #1">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M108.1,81.9 L141.5,116.4 L175.0,159.9 L208.4,208.9 L241.9,232.4 L275.3,254.2 L308.8,279.6 L342.2,297.7 
+		L375.7,310.4 L409.2,310.4 L442.6,265.1 L476.1,185.3 L509.5,130.9 L543.0,56.6 L576.4,49.3 L609.9,91.0 
+		L643.3,49.3 '></path>
+</g>
+	</a>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(192, 192, 192)'  d='M74.6,49.3 L74.6,339.4 L676.8,339.4 M676.8,49.3 M74.6,49.3 '></path>
+</g>
+</svg>
+
