@@ -32,7 +32,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 #  - "_posts/200*"
-#- "_posts/201[0-6]*"
+#  - "_posts/201[0-6]*"
 
 timezone: Europe/London
 minima:
@@ -57,6 +57,7 @@ defaults:
 
 header_pages:
   - publications.md
+  - categories.html
   - films.html
   - about.md
         
