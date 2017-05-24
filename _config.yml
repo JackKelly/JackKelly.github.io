@@ -17,7 +17,7 @@ title: Jack Kelly
 email: jack@jack-kelly.com
 description: Computer science researcher interested in mitigating climate change; open science; parenting & enabling kids to create things
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jack-kelly.com"
+url: # "http://jack-kelly.com"
 twitter_username: jack_kelly
 github_username:  JackKelly
 
