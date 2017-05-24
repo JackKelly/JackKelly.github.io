@@ -4,6 +4,27 @@ title: Categories
 permalink: categories/
 ---
 
+{% assign thesaurus = "photography=colour|transport=train=ferry=plane|food=garden=waste=worms=wormery|smart meters=alertme=google power meter|MVHR=renovation" | split: "|" %}
+
+{% for synonyms_string in thesaurus %}
+  {% assign synonyms = synonyms_string | split: "=" %}
+  <h3>{{ synonyms | array_to_sentence_string }}</h3>
+  {% assign post_urls = "" | split: "" %}
+  <ul>
+  {% for category in synonyms %}
+    {% for post in site.categories[category] %}
+      {% unless post_urls contains post.url %}
+        <li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% assign post_urls = post_urls | push: post.url %}
+      {% endunless %}
+      
+    {% endfor %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+<hr/>
+
 {% for category in site.categories %}
   <h3><a name="{{ category | first }}"></a>{{ category | first }}</h3>
     <ul>

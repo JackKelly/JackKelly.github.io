@@ -31,8 +31,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-#  - "_posts/200*"
-#  - "_posts/201[0-6]*"
+  - "_posts/200*"
+  - "_posts/201[2-7]*"
 
 timezone: Europe/London
 minima:
