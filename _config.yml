@@ -56,7 +56,7 @@ defaults:
       path: _films
       type: films
     values:
-      layout: page
+      layout: page-with-comments
       comments: true
 
 header_pages:
