@@ -18,9 +18,7 @@ Below is the batch script I use to achieve the following behaviour:
     backup process. But the Photos directory on both disks should be
     exact copies.
 
-<div class="geshifilter">
-
-``` {.text .geshifilter-text style="font-family:monospace;"}
+{% highlight bat %}
 REM tutorial: http://www.sevenforums.com/tutorials/187346-robocopy-create-backup-script.html
 REM options: http://technet.microsoft.com/en-us/library/cc733145%28WS.10%29.aspx
 REM
@@ -30,16 +28,15 @@ REM /np   = no progress counter
 REM /log: = create a logfile
 REM /xo   = exclude older files
 REM /xd   = exclude directory
- 
+
 robocopy D:\ I:\Backup\Storage /e /np /log:backup_log.txt /xo /xd $RECYCLE.BIN RECYCLER "System 
 Volume Information" Photos
- 
-robocopy D:\Photos I:\Backup\Storage\Photos /e /mir /np /log:backup_photos_log.txt
- 
-pause
-```
 
-</div>
+robocopy D:\Photos I:\Backup\Storage\Photos /e /mir /np /log:backup_photos_log.txt
+
+pause
+{% endhighlight %}
+
 
 <!--break-->
 

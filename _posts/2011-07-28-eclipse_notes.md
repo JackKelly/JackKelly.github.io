@@ -20,8 +20,7 @@ with a candidate patch, which works for me.
 ### Git diff not working in Eclipse
 
 After manually installing Eclipse 4.2.1 on a fresh install of Ubuntu
-12.04 I found that the <span class="geshifilter">`Team -> Commit`{.text
-.geshifilter-text}</span> command complained that it couldn't launch a
+12.04 I found that the `Team -> Commit` command complained that it couldn't launch a
 browser to display the git diff. I've documented the (simple) fix [on
 the Ubuntu
 Wiki](https://help.ubuntu.com/community/EclipseIDE#A.22Failed_to_create_a_browser_control_to_display_diff..22_error).
@@ -32,28 +31,21 @@ Wiki](https://help.ubuntu.com/community/EclipseIDE#A.22Failed_to_create_a_browse
 Arduino](http://horrorcoding.altervista.org/arduino-development-with-eclipse-a-step-by-step-tutorial-to-the-basic-setup/).
 Some slight modifications for Ubuntu 12.04 and Eclipse Juno:
 
--   arduino\_base\_path is <span
-    class="geshifilter">`/usr/share/arduino/`{.text
-    .geshifilter-text}</span>. So the two directories to add to the
+-   arduino\_base\_path is `/usr/share/arduino/`. So the two directories to add to the
     ArduinoCore are
-    <div class="geshifilter">
 
-    ``` {.text .geshifilter-text style="font-family:monospace;"}
+    ```
     /usr/share/arduino/hardware/arduino/cores/arduino/
     /usr/share/arduino/hardware/arduino/variants/standard/
     ```
-
-    </div>
 
 -   in the step which starts "In Eclipse right click on the
     “ArduinoCore” project, select “Properties” and then “C/C++ Build”
     you need to then click on "Settings" and you'll find the
     "Directories" setting within the "Tool Settings" tab
--   Some code includes pre-processor directives like <span
-    class="geshifilter">`#ifdef ARDUINO`{.text .geshifilter-text}</span>
+-   Some code includes pre-processor directives like `#ifdef ARDUINO`
     to check whether the user is using the Arduino IDE. If you want add
-    this <span class="geshifilter">`ARDUINO`{.text
-    .geshifilter-text}</span> symbole then right click on the Arduino
+    this `ARDUINO` symbol then right click on the Arduino
     project go to C/C++ build -&gt; Settings and add "ARDUINO=100" to
     "Symbols" under both AVR Compiler and AVR C++ Compiler.
 -   My "Olimex AVR-ISP500-TINY" programmer settings in the "Edit AVRDude
@@ -64,13 +56,9 @@ Some slight modifications for Ubuntu 12.04 and Eclipse Juno:
     way to the ArduinoCore library, with the same include paths. In your
     actual project, make sure that the ArduinoCore library comes last in
     C/C++ Build -&gt; Settings -&gt; AVR C++ Linker -&gt; Libraries.
--   On avr-gcc 4.7 (default on Ubuntu 12.10) I had to remove the <span
-    class="geshifilter">`--cref`{.text .geshifilter-text}</span> option.
-    Seems to work fine. With the <span
-    class="geshifilter">`--cref`{.text .geshifilter-text}</span> option
-    in place, the linker exits with an error <span
-    class="geshifilter">`avr-g++: error: unrecognized command line option ‘–cref’`{.text
-    .geshifilter-text}</span>. I’ve struggled to find what the “–cref”
+-   On avr-gcc 4.7 (default on Ubuntu 12.10) I had to remove the `--cref` option.
+    Seems to work fine. With the `--cref` option
+    in place, the linker exits with an error `avr-g++: error: unrecognized command line option ‘–cref’`. I’ve struggled to find what the “–cref”
     option does. The only hint of an explanation is that it tells the
     linker to “add cross reference to map file”. looking at the
     Eclipse (4.2.1) console after I build my project, I see this still
@@ -83,13 +71,10 @@ Some slight modifications for Ubuntu 12.04 and Eclipse Juno:
     and found some differences. To create smaller binaries on Eclipse,
     do this on every AVR project (including ArduinoCore): go to C/C++
     Build -&gt; Settings -&gt; AVR Compiler -&gt; Optimization and add
-    <span
-    class="geshifilter">`-ffunction-sections -fdata-sections`{.text
-    .geshifilter-text}</span> to "Other Optimization Flags". Do the same
+    `-ffunction-sections -fdata-sections` to "Other Optimization Flags". Do the same
     for the AVR C++ compiler. In all AVR *application* projects (i.e.
     not static libraries) go to AVR C++ Linker -&gt; General and add
-    <span class="geshifilter">`-Wl,--gc-sections`{.text
-    .geshifilter-text}</span> to "Other Arguments". Clean and re-build.
+    `-Wl,--gc-sections` to "Other Arguments". Clean and re-build.
     My binary went from 26kbytes (81% full) to 14kbytes (43% full). For
     more info on what these switches are doing, see ["function sections"
     on elinux.org](http://elinux.org/Function_sections) and [Stack
@@ -155,44 +140,8 @@ General &gt; Workspace &gt; Save automatically before build
 
 ### Aptana Studio
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-<meta content="text/html; charset=utf-8" http-equiv="content-type">
-
 [Aptana Studio](http://www.aptana.com/products/studio3) is an Integrated
-Development Environment (IDE) for building web apps.  It's based on
+Development Environment (IDE) for building web apps. It's based on
 Eclipse and is free.  This blog post is simply a list of configuration
 options that I use to make Aptana Studio 3 comfortable for me:
 

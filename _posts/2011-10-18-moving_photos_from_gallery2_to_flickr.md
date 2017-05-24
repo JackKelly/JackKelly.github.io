@@ -15,26 +15,22 @@ upload photos direct to Flickr). Moving the photos is pretty easy using
 the [Gallery2Flickr plug-in](http://gallery2flickr.sourceforge.net/) for
 Gallery2. Transferring photos mostly went smoothly but occasionally it
 failed with the following error:
-<div class="geshifilter">
 
-``` {.bash .geshifilter-bash style="font-family:monospace;"}
+
+```
 Catchable fatal error:
 Object of class GalleryStatus could not be converted to string in modules/Gallery2Flickr/classes/phpFlickr/phpFlickr.php on line 214
 ```
 
-</div>
 
 After some tinkering, this was fixed by setting the parameter
-<div class="geshifilter">
 
-``` {.php .geshifilter-php style="font-family:monospace;"}
+
+{% highlight php %}
 $storeConfig['type'] = 'mysql';
-```
+{% endhighlight %}
 
-</div>
 
-in <span class="geshifilter">`config.php`{.text
-.geshifilter-text}</span> (it was set as <span
-class="geshifilter">`'mysqli'`{.text .geshifilter-text}</span>). This is
+in `config.php` (it was set as `'mysqli'`). This is
 a bit of a dirty hack but it works.
 

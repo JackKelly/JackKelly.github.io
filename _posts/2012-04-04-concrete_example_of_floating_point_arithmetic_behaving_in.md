@@ -17,8 +17,7 @@ to be handled with care.   Here's the example... if I subtract 0.8 from
 1, the remainder is 0.2, right?  So let's try asking Matlab or C++.  Try
 evalating the following:
 
-<span class="geshifilter">`(1 - 0.8) == 0.2`{.cpp
-.geshifilter-cpp}</span>
+`(1 - 0.8) == 0.2`
 
 This expression will return a boolean.  It's simply subtracting 0.8 from
 1 and then asking if the answer is equal to 0.2.   Rather surprisingly,
@@ -44,30 +43,19 @@ here: <http://en.wikipedia.org/wiki/Floating_point#Accuracy_problems>
 
 **Update 18/6/2012**
 
-I've just learnt that Python can cope with decimal numbers if you <span
-class="geshifilter">`import decimal`{.text .geshifilter-text}</span>:
+I've just learnt that Python can cope with decimal numbers if you `import decimal`
 
-<span class="geshifilter">`1 - 0.8`{.text .geshifilter-text}</span>
+{% highlight python %}
+0.19999999999999996
 
-<span class="geshifilter">`0.19999999999999996 `{.text
-.geshifilter-text}</span>
+(1-0.8)==0.2
 
-<span class="geshifilter">`(1-0.8)==0.2 `{.text
-.geshifilter-text}</span>
+import decimal
 
-<span class="geshifilter">`False `{.text .geshifilter-text}</span>
+0.2
 
-<span class="geshifilter">`import decimal `{.text
-.geshifilter-text}</span>
-
-<span class="geshifilter">`1-0.8 `{.text .geshifilter-text}</span>
-
-<span class="geshifilter">`0.2 `{.text .geshifilter-text}</span>
-
-<span class="geshifilter">`(1-0.8)==0.2 `{.text
-.geshifilter-text}</span>
-
-<span class="geshifilter">`True`{.text .geshifilter-text}</span>
+(1-0.8)==0.2
+{% endhighlight %}
 
 Update 21/11/2013
 

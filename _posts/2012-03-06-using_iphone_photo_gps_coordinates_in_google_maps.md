@@ -11,19 +11,13 @@ it was taken.  How can this be done?  Easy:
     example, gwenview works well on Ubuntu.
 2.  Find the following attributes (I'll give specific values to make
     this example concrete)
-    1.  <span class="geshifilter">`GPS Longitude Reference = West`{.text
-        .geshifilter-text}</span>
-    2.  <span class="geshifilter">`GPS Latitude Reference = North`{.text
-        .geshifilter-text}</span>
-    3.  <span class="geshifilter">`GPS Longitude = 0deg 3.19000'`{.text
-        .geshifilter-text}</span>
-    4.  <span class="geshifilter">`GPS Latitude = 51deg 27.72000'`{.text
-        .geshifilter-text}</span>
+    1.  `GPS Longitude Reference = West`
+    2.  `GPS Latitude Reference = North`
+    3.  `GPS Longitude = 0deg 3.19000'`
+    4.  `GPS Latitude = 51deg 27.72000'`
 
-3.  Given the data above, you'd enter <span
-    class="geshifilter">`51 27.72', -0 3.19'`{.text
-    .geshifilter-text}</span> into Google Maps.  The minus before the
-    latitude is there because the latitude reference is "west" instead
-    of "east".<!--break-->
+3.  Given the data above, you'd enter `51 27.72', -0 3.19'` into
+    Google Maps. The minus before the latitude is there because the
+    latitude reference is "west" instead of "east".<!--break-->
 
 

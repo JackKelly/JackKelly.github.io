@@ -35,9 +35,8 @@ First configure `package.el` to use
 [marmalade](https://marmalade-repo.org/). This is what I put in my
 `.emacs` file:
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+{% highlight common-lisp %}
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
@@ -47,11 +46,8 @@ First configure `package.el` to use
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
-```
+{% endhighlight %}
 
-</div>
-
-</p>
 This allows you to easily install all these other plug ins:
 
 -   [highlight-symbol](http://www.emacswiki.org/emacs/HighlightSymbol)
@@ -130,8 +126,7 @@ Make errors into clickable links in iPython
 -   `cd /usr/share/emacs/24.3/lisp/progmodes`
 -   `sudo gunzip python.el.gz`
 -   `sudo gedit python.el`
--   Remove <span class="geshifilter">`line-start (1+ (any " \t"))`{.text
-    .geshifilter-text}</span> from line 1609
+-   Remove `line-start (1+ (any " \t"))` from line 1609
 -   `sudo emacs -batch -f batch-byte-compile *.el`
 
 Config .emacs for ipdb.
@@ -140,9 +135,7 @@ Config .emacs for ipdb.
 Code is [adapted from
 PedroKroger.net](pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/)
 
-<div class="geshifilter">
-
-``` {.text .geshifilter-text style="font-family:monospace;"}
+{% highlight common-lisp %}
 ;;----------------------------------------------------------------------------
 ;; ipdb
 ;; from: pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/
@@ -151,9 +144,9 @@ PedroKroger.net](pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/)
   (interactive)
   (highlight-lines-matching-regexp "import pdb")
   (highlight-lines-matching-regexp "pdb.set_trace()"))
- 
+
 (add-hook 'python-mode-hook 'annotate-pdb)
- 
+
 ;;----------
 ;; Keybinding to add breakpoint:
 (defun python-add-breakpoint ()
@@ -161,13 +154,11 @@ PedroKroger.net](pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/)
   (newline-and-indent)
   (insert "import ipdb; ipdb.set_trace()")
   (highlight-lines-matching-regexp "^[ ]*import ipdb; ipdb.set_trace()"))
- 
+
 (define-key python-mode-map (kbd "C-c C-t") 'python-add-breakpoint)
-```
+{% endhighlight %}
 
-</div>
 
-</p>
 Notes for using Emacs with C++
 ------------------------------
 

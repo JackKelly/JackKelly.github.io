@@ -11,26 +11,23 @@ First, download the ACM class file and let LaTeX know about it (modified
 from [Ubuntu
 wiki](https://help.ubuntu.com/community/LaTeX#User_install)):
 
-<div class="geshifilter">
-
-``` {.bash .geshifilter-bash style="font-family:monospace;"}
+{% highlight bash %}
 mkdir -p ~/texmf/tex/latex/sig-alternate/
 cd ~/texmf/tex/latex/sig-alternate/
 wget http://www.acm.org/sigs/publications/sig-alternate.cls
 texhash ~/texmf
-```
+{% endhighlight %}
 
-</div>
 
 Check that it's installed correctly by running something like:
 
-<div class="geshifilter">
 
-``` {.bash .geshifilter-bash style="font-family:monospace;"}
+
+{% highlight bash %}
 cd ~kpsewhich sig-alternate.cls
-```
+{% endhighlight %}
 
-</div>
+
 
 More info [about the ACM SIG class file is available on the ACM
 website](http://www.acm.org/sigs/publications/proceedings-templates#aL2).
@@ -51,10 +48,7 @@ Guide](http://www.acm.org/sigs/publications/sig-alternate-v1.1)!
 
 ### bst files
 
-Save your .bst file somewhere in your home directory, say <span
-class="geshifilter">`~/texmf/tex/bibtex.`{.text
-.geshifilter-text}</span>  Now run <span
-class="geshifilter">`locate abbrv.bst`{.text .geshifilter-text}</span>
+Save your .bst file somewhere in your home directory, say `~/texmf/tex/bibtex.`
 to find the directory where most of your bst files are installed; for me
 most of my bst files are stored
 in /usr/local/texlive/2011/texmf-dist/bibtex/bst/
@@ -62,11 +56,8 @@ in /usr/local/texlive/2011/texmf-dist/bibtex/bst/
 We now have to set the BSTINPUTS environment variable to include both
 your custom path and the path where most bst files are stored.
 
-I edited <span class="geshifilter">`~/.bashrc`{.text
-.geshifilter-text}</span> and added <span
-class="geshifilter">`export BSTINPUTS=/usr/local/texlive/2011/texmf-dist/bibtex/bst//:/home/jack/texmf/tex/bibtex//`{.text
-.geshifilter-text}</span>
+I edited `~/.bashrc`
 
-(The <span class="geshifilter">`//`{.text .geshifilter-text}</span> at
+(The `//` at
 the end of each path says "*search this path and all subdirectories*")
 

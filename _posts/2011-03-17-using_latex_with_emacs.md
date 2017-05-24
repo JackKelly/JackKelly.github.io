@@ -6,29 +6,29 @@ permalink: /using_latex_with_emacs
 ---
 ### Makefile
 
-<div class="geshifilter">
 
-``` {.make .geshifilter-make style="font-family:monospace;"}
+{% highlight makefile %}
 FILENAME = MyFile
- 
+
 $(FILENAME).pdf: $(FILENAME).tex
     make clean
     pdflatex $(FILENAME).tex
     bibtex $(FILENAME).aux
     pdflatex $(FILENAME).tex
     pdflatex $(FILENAME).tex
- 
-clean:
-    rm -f $(FILENAME).aux $(FILENAME).bbl $(FILENAME).blg $(FILENAME).dvi $(FILENAME).log $(FILENAME).out
-```
 
-</div>
+clean:
+    rm -f $(FILENAME).aux $(FILENAME).bbl $(FILENAME).blg $(FILENAME).dvi \
+$(FILENAME).log $(FILENAME).out
+{% endhighlight %}
+
+
 
 ### Useful packages
 
-<div class="geshifilter">
 
-``` {.latex .geshifilter-latex style="font-family:monospace;"}
+
+{% highlight latex %}
 \documentclass[11pt,twoside,a4paper]{article}
 \usepackage{a4wide} % make the page wider
 \usepackage{listings} % for code listings
@@ -45,7 +45,4 @@ basicstyle=\small\sffamily,  %\ttfamily,%\small\sffamily,
 % keywordstyle=\sffamily,
 frame=tblr,
 xleftmargin=3em}
-```
-
-</div>
-
+{% endhighlight %}
