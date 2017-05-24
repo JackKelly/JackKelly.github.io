@@ -63,3 +63,6 @@ header_pages:
   - categories.html
   - films.html
   - about.md
+
+disqus:
+  shortname: jack-kelly
