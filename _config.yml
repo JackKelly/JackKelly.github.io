@@ -47,6 +47,9 @@ collections:
     permalink: /blog/:name
   films:
     output: true
+  taxonomy:
+    output: true
+    permalink: /taxonomy/term/:name
     
 defaults:
   - scope:
