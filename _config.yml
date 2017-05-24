@@ -63,5 +63,3 @@ header_pages:
   - categories.html
   - films.html
   - about.md
-        
-categories_to_ignore: "consultations|reactive power|UK|control|energy efficiency|nanode|flickr|gallery2|iphone|epub|e-books|e-readers|information theory|graphical models|economics|trains|online courses|diy|LEDs|gas consumption|web|C++|JavaScript|HTML5|SVG|conferences|udev|EDF|home automation|OpenTRV|recommendations|fluorescent|machine learning|patents|open science|funding|metadata|workshop|NeuralNILM|imagemagick|pdf|reveal|d3|air quality|metrics|computer science|climate change mitigation|MATLAB|eclipse|nxj|svn|git|make|current cost|owfs|Doxygen|renovation"
