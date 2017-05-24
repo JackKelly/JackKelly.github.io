@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="home">
+ 
+  {{ content }}
+
+  <h1 class="page-heading">Blog posts</h1>
+
+  {% include list-posts.html posts=site.posts %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
+

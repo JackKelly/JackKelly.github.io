@@ -4,37 +4,55 @@ title: Categories
 permalink: categories/
 ---
 
-{% assign thesaurus = "photography=colour|transport=train=ferry=plane|food=garden=waste=worms=wormery|smart meters=alertme=google power meter|MVHR=renovation" | split: "|" %}
+{% assign thesaurus_string = "PhD=MSc|student project|competition|software engineering=programming=robotics=electronics=code documentation=linux=laptop=UML=1-wire|document authoring=Emacs=LaTeX=Lyx=Zotero=bibliographies|GNUplot=diagrams=graphs=data visualisation=MetaUML|introducing smart meter disaggregation=disaggregation=nilm|nilmtk|UK-DALE|children=teaching=belham=kids=making|green diary=refurbishment=MVHR=insulation=under floor heating=windows=lights=solar=solar thermal|climate science|photography=colour|transport=travel=train=rail strikes=ferry=plane|food=garden=plants=waste=worms=wormery=rainwater|smart meters=alertme=CurrentCost=EcoManager=google power meter=electrical efficiency=DECC|notes=filmmaking=video|htpc=xbmc=mythtv" %}
+{% assign thesaurus = thesaurus_string | split: "|" %}
+
+
+<ul>
+{% for synonyms_string in thesaurus %}
+  {% assign synonyms = synonyms_string | split: "=" %}
+  <li><a href="#{{ synonyms | first }}">{{ synonyms | array_to_sentence_string }}</a></li>
+{% endfor %}
+<li><a href="#uncategorised">Uncategorised</a></li>
+</ul>
+
+<p><hr/></p>
 
 {% for synonyms_string in thesaurus %}
   {% assign synonyms = synonyms_string | split: "=" %}
+  {% for category in synonyms %}
+    <a name="{{ category }}"></a>
+  {% endfor %}
   <h3>{{ synonyms | array_to_sentence_string }}</h3>
-  {% assign post_urls = "" | split: "" %}
-  <ul>
+  {% assign posts = "" | split: "" %}
   {% for category in synonyms %}
     {% for post in site.categories[category] %}
-      {% unless post_urls contains post.url %}
-        <li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% assign post_urls = post_urls | push: post.url %}
+      {% unless posts contains post %}
+        {% assign posts = posts | push: post %}
       {% endunless %}
-      
     {% endfor %}
   {% endfor %}
-  </ul>
+
+  {% assign posts = posts | sort: 'date' | reverse %}
+  {% include list-posts.html posts=posts %}
+
 {% endfor %}
 
-<hr/>
+<p><hr/></p>
 
-{% for category in site.categories %}
-  <h3><a name="{{ category | first }}"></a>{{ category | first }}</h3>
-    <ul>
-    {% for posts in category %}
-      {% unless forloop.first %}
-        {% for post in posts %}
-          <li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      {% endunless %}
-    {% endfor %}
-    </ul>
+<a name="uncategorised"></a>
+<h3>Uncategorised</h3>
+<ul>
+{% for post in site.posts %}
+  {% assign post_is_uncategorised = true %}
+  {% for category in post.categories %}
+    {% if thesaurus_string contains category %}
+      {% assign post_is_uncategorised = false %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if post_is_uncategorised %}
+    <li style="text-indent: -9em; padding-left: 9em;">{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}    
 {% endfor %}
-
+</ul>

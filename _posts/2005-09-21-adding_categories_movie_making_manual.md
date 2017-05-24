@@ -1,7 +1,7 @@
 ---
 title: " Adding categories to the Movie Making Manual"
 date: 2005-09-21 17:37:01 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/adding_categories_movie_making_manual
 ---
 ![MMM.gif](/blog/archives/MMM.gif){width="500" height="104"} Goody...

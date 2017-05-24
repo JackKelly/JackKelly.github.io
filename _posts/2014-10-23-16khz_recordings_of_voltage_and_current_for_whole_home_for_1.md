@@ -1,7 +1,7 @@
 ---
 title: "16kHz recordings of voltage and current for whole home for >1 year available"
 date: 2014-10-23 07:14:57 +0000
-categories: []
+categories: ["UK-DALE"]
 permalink: /16khz_recordings_of_voltage_and_current_for_whole_home_for_1
 ---
 Our 'UK Domestic Appliance-Level Electricity (UK-DALE)' dataset was

@@ -31,7 +31,7 @@ Slides:
   **Smarter Electricity and Argumentation Theory**<br/>
   In *Combinations of Intelligent Methods and Applications*, volume **46**, pages 79-95, 2016<br>
   DOI:[10.1007/978-3-319-26860-6_5](http://dx.doi.org/10.1007/978-3-319-26860-6_5)<br/>
-  Other links: [Research Gate](https://www.researchgate.net/publication/293488255_Smarter_Electricity_and_Argumentation_Theory)</br>
+  Other links: [Research Gate](https://www.researchgate.net/publication/293488255_Smarter_Electricity_and_Argumentation_Theory)<br/>
 
 # 2015
 

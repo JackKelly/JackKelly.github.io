@@ -1,7 +1,7 @@
 ---
 title: "MIRRORS given a good review by Ben Blaine"
 date: 2007-04-28 15:16:20 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/mirrors_given_good_review_ben_blaine
 ---
 Ben Blaine (from Shooting People) has seen MIRRORS and given it what can

@@ -1,7 +1,7 @@
 ---
 title: "Open letter to Nikon regarding movie mode, uncomressed RAW and RED"
 date: 2008-11-14 17:13:37 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/open_letter_nikon_regarding_movie_mode_uncomressed_raw_and_red
 ---
 Here's my open letter to Nikon pleading with them to develop a product

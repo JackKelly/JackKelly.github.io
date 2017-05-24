@@ -1,7 +1,7 @@
 ---
 title: " Mirrors website"
 date: 2006-11-18 17:35:06 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/mirrors_website
 ---
 I've put up an early version of the website for the last film I worked

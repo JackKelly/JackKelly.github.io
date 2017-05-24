@@ -1,7 +1,7 @@
 ---
 title: "Convert Reveal.js + D3 to PDF"
 date: 2015-11-11 19:38:17 +0000
-categories: ["imagemagick", "pdf", "reveal", "d3"]
+categories: ["imagemagick", "pdf", "reveal", "d3", "document authoring"]
 permalink: /convert_revealjs_d3_to_pdf
 ---
 The last two presentations I've given have been created using

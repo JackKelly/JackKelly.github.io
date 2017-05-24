@@ -1,7 +1,7 @@
 ---
 title: "May 2016 release of UK-DALE"
 date: 2016-06-13 10:57:58 +0000
-categories: []
+categories: ["UK-DALE"]
 permalink: /may_2016_release_of_ukdale
 ---
 I've just updated my [UK-DALE

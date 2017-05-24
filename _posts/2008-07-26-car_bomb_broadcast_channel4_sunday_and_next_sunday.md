@@ -1,7 +1,7 @@
 ---
 title: "\"Car Bomb\" broadcast on Channel4 this Sunday and next Sunday"
 date: 2008-07-26 08:45:00 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/car_bomb_broadcast_channel4_sunday_and_next_sunday
 ---
 ![](http://www.manyriversfilms.co.uk/assets/images/productions/car_bomb2.jpg)
@@ -13,3 +13,4 @@ info about the film can be found on [the Car Bomb page on Many Rivers
 Film's
 website](http://www.manyriversfilms.co.uk/pages/productions/car_bomb.htm).
 
+<iframe width="740" height="416" src="https://www.youtube.com/embed/fOcWFwGkNj8?rel=0" frameborder="0" allowfullscreen></iframe>

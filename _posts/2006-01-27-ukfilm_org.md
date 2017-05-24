@@ -1,7 +1,7 @@
 ---
 title: " UKfilm.org"
 date: 2006-01-27 22:04:53 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/ukfilm_org
 ---
 The new holding page for UKfilm.org has gone online: [UKfilm.org -

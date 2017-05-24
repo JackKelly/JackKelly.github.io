@@ -16,7 +16,9 @@ layout: default
       {% if page.categories %}
         | 
         {% for category in page.categories %}
-          <a href="/categories/#{{ category }}">{{ category }}</a>{% unless forloop.last %},{% endunless %} 
+          {% unless site.categories_to_ignore contains category %}
+            <a href="/categories/#{{ category }}">{{ category }}</a>{% unless forloop.last %},{% endunless %} 
+          {% endunless %}
         {% endfor %}
       {% endif %}
     </p>

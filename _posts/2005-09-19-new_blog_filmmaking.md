@@ -1,7 +1,7 @@
 ---
 title: " New blog for filmmaking"
 date: 2005-09-19 21:09:56 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/new_blog_filmmaking
 ---
 Hi, This is my new blog all about filmmaking. This will run side-by-side

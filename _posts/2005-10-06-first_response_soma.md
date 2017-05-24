@@ -1,7 +1,7 @@
 ---
-title: " First response from Soma!"
+title: "First response from Soma!"
 date: 2005-10-06 18:59:45 +0000
-categories: []
+categories: ["filmmaking"]
 permalink: /blog/first_response_soma
 ---
 Yesterday, we sent [Soma](http://www.somarecords.com/) a preview edit of

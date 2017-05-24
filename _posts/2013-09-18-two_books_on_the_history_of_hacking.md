@@ -1,7 +1,7 @@
 ---
 title: "Two books on the history of hacking"
 date: 2013-09-18 11:15:28 +0000
-categories: ["books"]
+categories: ["books", "software engineering"]
 permalink: /two_books_on_the_history_of_hacking
 ---
 I recently finished reading two great books on the history of hacking:
