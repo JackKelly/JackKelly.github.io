@@ -1,0 +1,17 @@
+---
+layout: page
+title: Films
+permalink: films/
+---
+
+<p>From 1999 - 2009, I worked on a range of films.  I moved from
+filmmaking to computer science in 2010.  Below are some details for
+some of the films I worked on.</p>
+
+{% for film in site.films %}
+  <div class="project-link">
+    <a class="post-link" href="{{ film.url | relative_url }}">
+      {{ film.title | escape }}
+    </a>  
+  </div>
+{% endfor %}

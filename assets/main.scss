@@ -1,0 +1,39 @@
+---
+---
+
+@import "minima";
+
+
+body {
+    font-family: Montserrat, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//-------------------------------------
+// TABLES
+
+tr {
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+td {
+    padding: 4px;
+}
+
+.column1 {
+    text-align: right;
+    font-weight: bold;
+}
+
+//---------------------------------------
+// IMAGES
+
+img {
+    margin-bottom: 2px;
+    max-width: 740px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

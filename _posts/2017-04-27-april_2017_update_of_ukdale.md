@@ -6,5 +6,5 @@ permalink: /april_2017_update_of_ukdale
 ---
 I've just updated my UK Domestic Appliance-Level Electricity (UK-DALE)
 dataset. House 1 now has 4.3 years of data!
-<https://www.doc.ic.ac.uk/\~dk3810/data/>
+<https://www.doc.ic.ac.uk/~dk3810/data/>
 

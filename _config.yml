@@ -20,25 +20,43 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: # "http://jack-kelly.com"
 twitter_username: jack_kelly
 github_username:  JackKelly
+linkedin_username: jackkelly0
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
+#  - "_posts/200*"
+#- "_posts/201[0-6]*"
 
 timezone: Europe/London
 minima:
   date_format: "%a %e %b %Y"
 
-excerpt_separator: <!--break-->
+excerpt_separator: "<!--break-->"
 
 google_analytics: UA-29040208-1
 
 collections:
   posts:
-    permalink: /:name
+    permalink: /blog/:name
+  films:
+    output: true
+    
+defaults:
+  - scope:
+      path: _films
+      type: films
+    values:
+      layout: page
 
+header_pages:
+  - publications.md
+  - films.html
+  - about.md
+        
