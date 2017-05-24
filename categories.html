@@ -4,12 +4,21 @@ title: Categories
 permalink: categories/
 ---
 
-{% assign thesaurus_string = "PhD=MSc|student project|competition|software engineering=programming=robotics=electronics=code documentation=linux=laptop=UML=1-wire|document authoring=Emacs=LaTeX=Lyx=Zotero=bibliographies|GNUplot=diagrams=graphs=data visualisation=MetaUML|introducing smart meter disaggregation=disaggregation=nilm|nilmtk|UK-DALE|children=teaching=belham=kids=making|green diary=refurbishment=MVHR=insulation=under floor heating=windows=lights=solar=solar thermal|climate science|photography=colour|transport=travel=train=rail strikes=ferry=plane|food=garden=plants=waste=worms=wormery=rainwater|smart meters=alertme=CurrentCost=EcoManager=google power meter=electrical efficiency=DECC|notes=filmmaking=video|htpc=xbmc=mythtv" %}
+{% assign thesaurus_string = "PhD=MSc|student project|competition|software engineering=programming=robotics=electronics=code documentation=linux=laptop=UML=1-wire|document authoring=Emacs=LaTeX=Lyx=Zotero=bibliographies|GNUplot=diagrams=graphs=data visualisation=MetaUML|introducing smart meter disaggregation=disaggregation=nilm|nilmtk|UK-DALE|children=teaching=belham=kids=making|green diary=refurbishment=MVHR=insulation=under floor heating=windows=lights=solar=solar thermal|climate science|photography=colour|transport=travel=train=rail strikes=ferry=plane|food=garden=plants=waste=worms=wormery=rainwater|smart meters=alertme=CurrentCost=EcoManager=google power meter=electrical efficiency=DECC=consultations=reactive power|notes=filmmaking=video|htpc=xbmc=mythtv" %}
+
 {% assign thesaurus = thesaurus_string | split: "|" %}
 
 
+{% assign categories_to_ignore = site.categories_to_ignore | split: "|" %}
+{% assign thesaurus_reduced_string = thesaurus_string %}
+{% for cat_to_ignore in categories_to_ignore %}
+  {% assign thesaurus_reduced_string = thesaurus_reduced_string | remove: cat_to_ignore %}
+{% endfor %}
+{% assign thesaurus_reduced = thesaurus_reduced_string | split: "|" %}
+
+
 <ul>
-{% for synonyms_string in thesaurus %}
+{% for synonyms_string in thesaurus_reduced %}
   {% assign synonyms = synonyms_string | split: "=" %}
   <li><a href="#{{ synonyms | first }}">{{ synonyms | array_to_sentence_string }}</a></li>
 {% endfor %}
@@ -18,12 +27,14 @@ permalink: categories/
 
 <p><hr/></p>
 
+
 {% for synonyms_string in thesaurus %}
   {% assign synonyms = synonyms_string | split: "=" %}
   {% for category in synonyms %}
     <a name="{{ category }}"></a>
   {% endfor %}
-  <h3>{{ synonyms | array_to_sentence_string }}</h3>
+  {% assign synonyms_reduced = thesaurus_reduced[forloop.index0] | split: "=" %}
+  <h3>{{ synonyms_reduced | array_to_sentence_string }}</h3>
   {% assign posts = "" | split: "" %}
   {% for category in synonyms %}
     {% for post in site.categories[category] %}
