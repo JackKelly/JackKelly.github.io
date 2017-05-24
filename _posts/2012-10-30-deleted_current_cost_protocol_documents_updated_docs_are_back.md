@@ -3,6 +3,7 @@ title: "Deleted Current Cost protocol documents - UPDATED: Docs are back!"
 date: 2012-10-30 11:34:39 +0000
 categories: ["PhD", "CurrentCost"]
 permalink: /deleted_current_cost_protocol_documents_updated_docs_are_back
+redirect_from: /deleted_current_cost_protocol_documents
 ---
 **Update 5/1/2016: CurrentCost have kindly allowed me to put these docs
 back onto [the GitHub
