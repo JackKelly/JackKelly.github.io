@@ -4,6 +4,12 @@ date: 2012-09-06 16:25:20 +0000
 categories: ["PhD", "CurrentCost", "EcoManager"]
 permalink: /success_pinging_edf_iam_and_receiving_response
 ---
+
+*Table of contents*
+
+* TOC
+{:toc}
+
 <span class="flickr-wrap" style="width:640px;"><span
 class="flickr-image">[![EDF IAM with
 Nanaode](https://farm9.staticflickr.com/8295/7944346618_21c5ff399c_z.jpg "EDF IAM with Nanaode")](https://www.flickr.com/photos/37816297@N06/7944346618)</span></span>
@@ -37,7 +43,7 @@ as I can tell, the EDF IAM packets are not "manchesterised" like the CC
 IAM packets; and the EDF RF packets are only 12 bytes long compared with
 16 bytes of manchesterised data for the CC packets.
 
-### Sniffing RF packets from the EDF IAM
+## Sniffing RF packets from the EDF IAM
 
 The EDF IAM probably emits only a 12 byte packet. But I captured and
 displayed 16 bytes just in case the packet is longer than 12 bytes. The
@@ -47,61 +53,61 @@ Cost code](https://github.com/JackKelly/rfm_current_cost) (using exactly
 the same settings as for the Current Cost IAMs) running on a
 [Nanode](http://www.nanode.eu/).
 
-#### EDF IAM transmissions when manual override is turned on and off.
+### EDF IAM transmissions when manual override is turned on and off.
 
-##### No appliance plugged into the EDF IAM.
+#### No appliance plugged into the EDF IAM.
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+```
 BYTE
 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
- 
+
 first time on:
 52 55 10  0  3  0 41 4B  7  0 53 A0 62  2  0  0 
 52 55 10  0  3  0 41 4B  7  0 53 A0 60  0  1 80 
- 
+
 first time off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 40 80  0  0 
- 
+
 second time on:
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 60  0  0 19 
- 
+
 second time off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 60  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  2  0  5 
- 
+
 third time on:
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
- 
+
 third time off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 40 40  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
- 
+
 fourth time on:
 52 55 10  0  3  0 41 4B  0  0 53 99 40  8  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 70  0  0  0 
- 
+
 fourth time off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 60  1  B  4 
 52 55 10  0  3  0 41 4B  0  0 4F 95 60  0  0  0
 ```
 
-</div>
+
 
 The EDF IAM appears to transmit two packets which are nearly identical
 for each manual switching event. Perhaps this is a simple way to
 increase resilience to dropped packets? I won't bother repeating the
 packets from now on...
 
-##### Different loads plugged into the IAM
+#### Different loads plugged into the IAM
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+```
 Plugged into a dimmable 75W lamp
 Gradually increasing.
 showing only the first transmission after "on":
@@ -111,7 +117,7 @@ showing only the first transmission after "on":
 52 55 10  0  3  0 41 4B 2C  0 53 C5 40  0  0  0  
 52 55 10  0  3  0 41 4B 35  0 53 CE 40  0  0  0
 52 55 10  0  3  0 41 4B 3D  0 53 D6 40  0  0  0 
- 
+
 Kettle:
 52 55 10  0  3  0 41 4B  4  0 53 9D 
 52 55 10  0  3  0 41 4B 42  9 53 E4 
@@ -119,7 +125,7 @@ Kettle:
 52 55 10  0  3  0 41 4B DD  8 53 7E 
 ```
 
-</div>
+
 
 So, based on this very limited set of observations:
 
@@ -141,105 +147,104 @@ So, based on this very limited set of observations:
 -   Bytes 13-15 appear to be just noise, strongly supporting the
     hypothesis that the EDF IAM packet is only 12 bytes long.
 
-### Pinging the EDF IAM
+## Pinging the EDF IAM
 
 I don't (yet) have an EDF EcoManager base station. But [cii
 reported](http://forum.jeelabs.net/comment/6832#comment-6832) a
 "conversation" between his EDF EcoManager and a single IAM. His
 conversation went like this:
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+```
 00 01 02 03 04 05 06 07 08 09 10 11
- 
+
 ping from EcoManager:
 46 55 10 00 01 00 50 53 00 00 4F 9E
- 
+
 and a reply from plug 1
 52 55 10 00 01 00 41 4B 00 00 4F 93
 ```
 
-</div>
+
 
 My IAM produces packets like this:
 
-<span class="geshifilter">`52 55 10  0  3  0 41 4B  0  0 4F 95`{.text
-.geshifilter-text}</span>
+`52 55 10 0 3 0 41 4B 0 0 4F 95`
 
 So I came up with an 11-byte packet using the patterns in cii's data and
 added a checksum to come up with:
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+```
 Ping from my RFM12b:
 46 55 10  0  3  0 50 53  0  0 4F A0
- 
+
 Reply from EDF IAM:
 52 55 10  0  3  0 41 4B  0  0 53 99
 ```
 
-</div>
 
-### The tuning button
 
-<div class="geshifilter">
+## The tuning button
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+
+```
 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
- 
+
 After pressing the "tune" button:
 52 82 3B 36 66  0 43 4F  0  0 53 90 40  0  0  0 
 52 82 3B 36 66  0 43 4F  0  0 53 90 60  0  0  0 
- 
+
 on:
 52 55 10  0  3  0 41 4B  0  0 53 99 60  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
- 
+
 off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0
- 
+
 on:
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 60  0  0  0 
- 
+
 off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 42  s0  0  0 
- 
+
 After pressing the "tune" button again:
 52 7E 32 3B 7E  0 43 4F  0  0 53 A0 40  0  0  0 
 52 7E 32 3B 7E  0 43 4F  0  0 53 A0 40  0  0  0 
- 
+
 on:
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 53 99 40  0  0  0 
- 
+
 off:
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
 52 55 10  0  3  0 41 4B  0  0 4F 95 40  0  0  0 
- 
+
 After pressing the "tune" button again:
 52 1D 1D 1F 5D  0 43 4F  0  0 4F E9 40  0  0  0
 52 1D 1D 1F 5D  0 43 4F  0  0 4F E9 40  0  0  0 
 ```
 
-</div>
+
 
 The tuning button is just odd. To recap, I pressed the tuning button
 three times and the three responses from the EDF IAM were:
 
-<div class="geshifilter">
 
-``` {.text .geshifilter-text style="font-family:monospace;"}
+
+```
 52 82 3B 36 66  0 43 4F  0  0 53 90 40  0  0  0 
 52 7E 32 3B 7E  0 43 4F  0  0 53 A0 40  0  0  0 
 52 1D 1D 1F 5D  0 43 4F  0  0 4F E9 40  0  0  0
 ```
 
-</div>
+
 
 -   Byte 0 is always 0x52
 -   Bytes 5, 8 and 9 are always 0
@@ -251,7 +256,7 @@ command from the EcoManager to tell the EDF IAMs which ID to adopt (this
 would be sensible as only the EcoManager base knows which IDs are
 current in use and which are available).
 
-### Implementation
+## Implementation
 
 I've started work on an DIY EDF EcoManager. [My AVR C++ code is on
 github](https://github.com/JackKelly/rfm_edf_ecomanager). I'm using an
@@ -260,7 +265,7 @@ single EDF IAM, checks the incomming packet's checksum and extracts the
 wattage. All very simple and the code is rather ugly at the moment
 because I'm still hacking around a lot.
 
-### Sample rate
+## Sample rate
 
 I had hoped that I'd be able to sample each appliance once every, say,
 three seconds. It looks like it is possible to ping the EDF IAM as
@@ -270,7 +275,7 @@ sample the wattage when you ping the EDF IAM but instead it's
 independently measuring the wattage and storing this value ready for
 transmission when you poll for it.
 
-### Who makes the EDF IAM?
+## Who makes the EDF IAM?
 
 <span class="flickr-wrap" style="width:480px;"><span
 class="flickr-image">[![Back of EDF
@@ -279,7 +284,7 @@ IAM](https://farm9.staticflickr.com/8182/7944335674_e5a78344cd_z.jpg "Back of ED
 Note that this EDF IAM has a model name "IAM" whilst the CC IAMs have
 the model name "IAM Transmitter Only".
 
-### Wiki page for technical details of the EDF EcoManager protocol
+## Wiki page for technical details of the EDF EcoManager protocol
 
 I've started [a wiki page for technical details of the EDF EcoManager
 protocol](https://github.com/JackKelly/rfm_edf_ecomanager/wiki/Technical-details-of-the-EDF-EcoManager-and-accessories).
