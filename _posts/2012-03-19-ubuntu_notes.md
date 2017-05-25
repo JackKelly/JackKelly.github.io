@@ -162,3 +162,8 @@ Unity-2D](http://askubuntu.com/a/130462). I then had to fix some of my
 settings, especially re-enabling dBus and animations and window
 decorations.
 
+### Counting files and directories
+
+* `ls -1 <DIR> | wc -l` count files and directories in <DIR>
+* `find <DIR> -type d | wc -l` recursively count all directories below <DIR>
+* `find <DIR> -type f | wc -l` recursively count all files below <DIR>
