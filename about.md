@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I use artificial intelligence to mitigate climate change (mostly by increasing energy efficiency). I finished a post-doc at [Imperial College London](https://www.imperial.ac.uk) in 2017 and I will be starting at [DeepMind](https://deepmind.com)'s Energy team in June 2017.
+I use artificial intelligence to mitigate climate change (mostly by increasing energy efficiency). I finished a post-doc at [Imperial College London](https://www.imperial.ac.uk) in 2017 and I will be starting work as a Research Engineer in [DeepMind](https://deepmind.com)'s Energy team on the 26<sup>th</sup> June 2017.
 
 Since I was a kid, I've been interested in how biological systems learn & process information; and I've been keen to replicate this in machines. I studied [Neuroscience BSc at UCL](http://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc/) & absolutely loved it.
 
