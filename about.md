@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I try to mitigate climate change using computer science.  I am a Research Engineer in [DeepMind](https://deepmind.com)'s Energy team. I finished a post-doc at [Imperial College London](https://www.imperial.ac.uk) in 2017.
+{{ site.description | markdownify }}
 
 Since I was a kid, I've been interested in how biological systems learn & process information; and I've been keen to replicate this in machines. I studied [Neuroscience BSc at UCL](http://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc/) & absolutely loved it.
 
