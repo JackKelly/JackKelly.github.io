@@ -77,6 +77,27 @@ day, <em>not</em> 28.8 GBytes per day!</p>
 
 <h2>Brief description of the data formats available</h2>
 
+<h3>1 second and 6 second data</h3>
+
+<p>All five homes have whole-home power recorded every six seconds; and appliance-level data is at six second resolution.  Homes 1, 2 and 5 also have whole-home active power and apparent power at 1 second resolution.  The six-second and one-second data is stored in CSV files where the first column is the UNIX timestamp.</p>
+
+<h3>NILMTK HDF5 version</h3>
+
+<p>An <a href="https://support.hdfgroup.org/HDF5/">HDF5</a> version of
+the 1-second and 6-second data (for use with
+  <a href="http://nilmtk.github.io/">NILMTK</a>) is <a href="http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2015/UK-DALE-disaggregated/">available on the UKERC EDC</a> and via my FTP server</p>
+
+<h3>Utility meters</h3>
+
+<p>Gas and electricity utility meter readings for house 1 are available in two
+  formats:</p>
+
+<ul>
+  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=html">web page</a></li>
+  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=csv">CSV (UTF-8)</a></li>
+</ul>
+
+
 <a name="16kHz_data"></a>
 <h3>16 kHz voltage and current from homes 1, 2 and 5</h3>
 
@@ -128,22 +149,6 @@ day, <em>not</em> 28.8 GBytes per day!</p>
   '<code>phase_difference</code>' parameter and just assume that the
   measurement hardware introduces no significant phase shift.</p>
 
-<h3>NILMTK HDF5 version</h3>
-
-<p>An <a href="https://support.hdfgroup.org/HDF5/">HDF5</a> version of
-the 1-second and 6-second data (for use with
-  <a href="http://nilmtk.github.io/">NILMTK</a>) is <a href="http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2015/UK-DALE-disaggregated/">available on the UKERC EDC</a> and via my FTP server</p>
-
-<h3>Utility meters</h3>
-
-<p>Gas and electricity utility meter readings for house 1 are available in two
-  formats:</p>
-
-<ul>
-  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=html">web page</a></li>
-  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=csv">CSV (UTF-8)</a></li>
-</ul>
-
 
 <h2>Download</h2>
 
@@ -191,6 +196,9 @@ the 1-second and 6-second data (for use with
  directory: /UK-DALE/
 </pre>
 
+<h3> April 2017 from the UKERC EDC </h3>
+
+<p>At the time of writing (June 22, 2017), the UKERC EDC are still transferring the April 2017 data to the EDC.  The data that has been transferred [is visible on the EDC](http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2017).</p>
 
 <h2>Dataset license</h2>
 <p>This data is made freely available under Creative Commons
