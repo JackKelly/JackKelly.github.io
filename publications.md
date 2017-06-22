@@ -42,7 +42,7 @@ Slides:
   DOI:[10.1145/2821650.2821672](http://dx.doi.org/10.1145/2821650.2821672)<br/>
   **Won (joint) best presentation** ([slides](http://jackkelly.github.io/BuildSys_2015_NeuralNILM) available online and [a video of the talk](https://www.youtube.com/watch?v=PC60fysLScg) is also available; and the [poster](/files/writing/NeuralNILM_poster.pdf))<br/>
   Code: [NeuralNILM](https://github.com/jackKelly/neuralnilm), [NeuralNILM_plots](https://github.com/JackKelly/neuralnilm_plots), [NeuralNILM_Prototype](https://github.com/JackKelly/neuralnilm_prototype)<br/>
-Other links: [Data](/files/neuralnilm/), [GitXiv](http://gitxiv.com/posts/o4raoYX2HLyCfnCZs/neural-nilm),
+Other links: [Data](/neuralnilm/), [GitXiv](http://gitxiv.com/posts/o4raoYX2HLyCfnCZs/neural-nilm),
   [Research Gate](https://www.researchgate.net/publication/280329746_Neural_NILM_Deep_Neural_Networks_Applied_to_Energy_Disaggregation)
 
 * Jack Kelly and William Knottenbelt<br/>
