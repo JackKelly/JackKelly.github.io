@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I use artificial intelligence to mitigate climate change (mostly by increasing energy efficiency). I finished a post-doc at [Imperial College London](https://www.imperial.ac.uk) in 2017 and I will be starting work as a Research Engineer in [DeepMind](https://deepmind.com)'s Energy team on the 26<sup>th</sup> June 2017.
+I try to mitigate climate change using computer science.  I am a Research Engineer in [DeepMind](https://deepmind.com)'s Energy team. I finished a post-doc at [Imperial College London](https://www.imperial.ac.uk) in 2017.
 
 Since I was a kid, I've been interested in how biological systems learn & process information; and I've been keen to replicate this in machines. I studied [Neuroscience BSc at UCL](http://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc/) & absolutely loved it.
 
@@ -12,7 +12,9 @@ But, towards the end of my BSc, I became increasingly worried about climate chan
 
 I had been excited by filmmaking since my teens so it seemed natural to try to make a living making environmental films.  I had a lot of fun [working on a wide variety of films](/films); but it turned out to be almost impossible to make a living making environmental films.
 
-So I went back to my geeky AI-inspired roots and did the [Computing Science MSc at Imperial](https://www.imperial.ac.uk/study/pg/computing/computing-science/), with the explicit aim of using AI to mitigate climate change. The MSc was a huge amount of fun so I applied to do a PhD on energy disaggregation, which I also thoroughly enjoyed. After my PhD, I did a post-doc (based at Imperial but paid for by the lovely folks at EDF Energy) looking at how to help the disaggregation field evolve rapidly. 
+So I went back to my geeky AI-inspired roots and did the [Computing Science MSc at Imperial](https://www.imperial.ac.uk/study/pg/computing/computing-science/), with the explicit aim of using AI to mitigate climate change. The MSc was a huge amount of fun!  For my end-of-year research project, I proposed an energy disaggregation project, which I really enjoyed so I applied to do a PhD on energy disaggregation. After my PhD, I did a post-doc (based at Imperial but paid for by the lovely folks at EDF Energy) looking at how to help the disaggregation field evolve rapidly. 
+
+During my PhD, I also became fascinated by getting kids excited about engineering (by doing "making" workshops); and in open-science.
 
 However, [the last paper I wrote during my PhD](https://arxiv.org/abs/1605.00962) showed that there really isn't much good evidence that disaggregated energy bills encourage people to save energy. So I decided to shift my focus away from disaggregation.
 

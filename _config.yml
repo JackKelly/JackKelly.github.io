@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Jack Kelly
 email: jack@jack-kelly.com
-description: Computer science researcher interested in mitigating climate change; open science; parenting & enabling kids to create things
+description: "I try to mitigate climate change using computer science.  I am a Research Engineer in [DeepMind](https://deepmind.com)'s Energy team. Previously, I worked on energy disaggregation as a post-doc at [Imperial College London](https://www.imperial.ac.uk)."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jack-kelly.com"
 twitter_username: jack_kelly
@@ -25,6 +25,7 @@ linkedin_username: jackkelly0
 # Build settings
 markdown: kramdown
 theme: minima
+incremental: true
 gems:
   - jekyll-feed
   - jekyll-redirect-from
@@ -32,7 +33,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 #  - "_posts/200*"
-#  - "_posts/201[0-1]*"
+#  - "_posts/201[0-6]*"
 
 timezone: Europe/London
 minima:
@@ -64,6 +65,7 @@ header_pages:
   - categories.html
   - films.html
   - about.md
+  - search.html
 
 disqus:
   shortname: jack-kelly

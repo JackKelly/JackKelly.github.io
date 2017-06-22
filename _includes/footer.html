@@ -46,7 +46,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }} <br/> <a href="/about">More...</a></p>
+        {{ site.description | append: "  Read [more about me...](/about)" | markdownify }}
       </div>
     </div>
 
