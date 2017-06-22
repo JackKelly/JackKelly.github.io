@@ -1,7 +1,7 @@
 ---
 title: NeuralNILM
 layout: page
-permalink: /neuralnilm
+permalink: /neuralnilm/
 ---
 
 Some additional files to accompany my [NeuralNILM paper](/files/writing/neural_nilm.pdf):
