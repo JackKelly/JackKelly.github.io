@@ -1,0 +1,560 @@
+---
+title: "MSc project proposal: Automatic categorisation of plant images"
+permalink: /plant_recogniser.html
+layout: page
+categories: ["student project", MSc, PhD]
+---
+
+<p><em>Imperial Computing Science MSc Group Project Proposal, November 2013</em></p>
+
+<h3>Aim</h3>
+<p>The ultimate aim is to produce a smart phone application which can
+automatically identify a plant from a photo.  One use case is some one
+who is out on a walk and wants to know the identity of a plant
+(specifically: my 2 yearold daughter keeps asking me to identify trees
+but I'm useless at it and existing tree identification apps are slow
+and laborious to use!).  Another use case is a farmer who wants to
+know the identity of a strange new weed. One of the ultimate aims is
+to encourage a greater enthusiasm and curiosity for the natural
+world.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/450px-Ash_Tree_-_geograph.org.uk_-_590710.jpg">
+
+<h3>Competition</h3> 
+<p>There is an international plant image classification competition
+called "<a href="http://www.imageclef.org/node/179">PlantCLEF
+2014</a>" which you could enter if you feel confident about your image
+classification system!  They provide a large, labelled dataset of
+images.</p>
+
+<h3>Learning algorithms</h3>
+<p>You'd be free to choose any image classification approach you want.
+  The help to give you a feel for what the options are, let me give a very
+  quick intro to image classification:</p>
+
+<p>There are typically at least two stages to an image classification
+  system: first "features" (edges, corners, blobs etc) are detected in
+  the image and then these features are passed to a classification
+  algorithm.</p>
+
+<h4>Feature extraction</h4>
+
+<p>There are two main approaches to feature extraction: either
+  hand-craft your feature detectors or build a system which can
+  automatically learn which features to extract.</p>
+
+<h5>Hand-crafted feature detectors</h5>
+
+<p>You could either
+  build your own feature detectors from scratch (which might be fun
+  but would carry some risk: it's remarkably hard to build robust
+  feature detectors!) or choose from the wide array of feature
+  detectors described in the literature.  For a quick intro to
+  hand-built feature detectors, see the Wikipedia page
+  on <a href="http://en.wikipedia.org/wiki/Feature_detection_%28computer_vision%29">feature
+  detection (computer vision)</a> and also see
+  this <a href="https://vimeo.com/79536175">30-minute video tutorial
+  from the 2013 PyData conference on using Python to extract features
+  from images</a>.</p>
+
+<h5>Automatic feature learning</h5>
+
+<p>The alternative to hand-building feature detectors is to build a
+  system which can automatically learn which features to detect.</p>
+
+<p>
+  Before considering how to do this on a computer, let's briefly
+  consider the best object classification system we know of: the
+  brain. Does our genome define separate feature detectors for speech,
+  faces, plants, tools, animals etc?  The answer is almost certainly
+  "no"! What evidence is there? Firstly, the human genome only contains
+  about 20,000 protein-coding genes.  Even if we include the
+  non-protein-coding regulatory DNA sequences, there is still far too
+  little information in the genome to specify lots of different
+  learning algorithms. And there are rather gory neuroscience
+  experiments where the optic nerve of rodents has been re-routed
+  at birth to feed into the auditory cortex.  After a short
+  while the "auditory cortex" of the brain has
+  magically learnt to do sight
+  (e.g. see <a href="http://www.nature.com/nature/journal/v404/n6780/abs/404841a0.html">Sharma
+  et al 2000</a>). One interpretation of this is that the brain
+  automatically learns to extract features from the input data.</p>
+
+<p>In the context of computer vision, automatic feature learning has
+several advantages over hand-built feature detectors.  First, the
+system should find the most useful features to extract (whilst with
+hand-built feature detectors, you are making a subjective judgement
+about which features you <em>think</em> are best).  Secondly, you
+don't need to go through months or years of R&amp;D to build each new
+feature detector!  Thirdly, automatic feature learning can be
+done in a completely unsupervised fashion.  For example, you could get
+as many unlabelled plant images as possible (e.g. from flickr / google
+image search) and feed these to your system and it will automatically
+figure out which features to extract.  How does it do this?  It's
+basically trying to find the most compact representation for the
+data.</p>
+
+<p>There are several ways to do automatic feature learning on a
+  computer and they mostly come under the banner of "deep learning"
+  (this is a poorly defined term but it pretty much means a large
+  artificial neural network with multiple hidden layers). At the time
+  of writing, deep learning appears to be a very effective technology
+  for image classification.  For example, here are some recent
+  successes:</p>
+
+<ul>
+<li><a href="http://books.nips.cc/papers/files/nips25/NIPS2012_0534.pdf">Krizhevsky,
+    Sutskever &amp; Hinton 2012</a> won
+    the <a href="http://www.image-net.org/challenges/LSVRC/2012/results.html">2012
+    ImageNet "Large Scale Visual Recognition Challenge"</a> by a wide
+    margin using a deep neural network trained on two GPUs.
+    Their <a href="http://code.google.com/p/cuda-convnet/">cuda-convnet
+    code</a> is online and has
+    been <a href="https://github.com/dnouri/cuda-convnet">forked</a>
+    to include a state-of-the-art technique called "dropout".</li>
+<li><a href="http://www.matthewzeiler.com/">Matt Zeiler</a>'s
+  "Clarifai" deep learning system <a href="http://www.image-net.org/challenges/LSVRC/2013/results.php">won the 2013
+  ImageNet Large Scale Visual Recognition Challenge</a> on the
+  classification task (with 1000
+  categories). Also take a look
+  at <a href="https://plus.google.com/+YannLeCunPhD/posts/arfRdGwxQ2L">Yann
+  LeCun's comments on the competition</a>.  More details of the
+  approaches used in LSVRC 2013 should be released after the
+  <a href="http://image-net.org/challenges/LSVRC/2013/iccv2013.php">LSVRC2013 workshop</a> on the 7th Dec 2013.</li>
+<li>Since
+    2009, <a href="http://www.idsia.ch/%7Ejuergen/vision.html">J&uuml;rgen
+    Schmidhuber's deep learning lab</a> have won 9 first prizes in
+    highly competitive international visual pattern recognition
+    contests including MICCAI 2013 Grand Challenge on Mitosis
+    Detection, IJCNN 2011 Traffic Sign Recognition Competition (only
+    their method achieved superhuman results), ICDAR 2011 offline
+    Chinese Handwriting Competition.</li>
+<li>Deep learning approaches are also doing very well at speech
+    recognition
+    (e.g. see <a href="http://www.cs.toronto.edu/~hinton/absps/DNN-2012-proof.pdf">Hinton
+    et al 2012</a>), sentiment analysis, multi-task learning,
+    language translation etc etc...</li>
+</ul>
+
+<p>You could also try to exploit "non-image" data like the
+  geographical location and time of year.</p>
+
+
+<h4>Learning about deep neural nets</h4>
+<ul>
+<li>This video gives quite a quick (45 minute) overview of "deep
+learning" and automatic feature
+learning: <a href="http://www.youtube.com/watch?v=n1ViNeWhC24">Andrew
+Ng: Deep Learning, Self-Taught Learning and Unsupervised Feature
+Learning</a></li>
+<li>Prof Geoffrey Hinton's Coursera course
+on <a href="https://www.coursera.org/course/neuralnets">"Neural
+Networks for Machine Learning"</a> is still available.</li>
+<li>Yoshua
+Bengio, <a href="http://www.iro.umontreal.ca/%7Elisa/publications2/index.php/publications/show/239">Learning
+Deep Architectures for AI</a>, Foundations and Trends in Machine
+Learning, 2(1), 2009</li>
+<li>Yann LeCun, Koray Kavukcuoglu, and Cl&eacute;ment
+Farabet. "<a href="http://yann.lecun.com/exdb/publis/pdf/lecun-iscas-10.pdf">Convolutional networks and applications in vision</a>." Circuits
+and Systems (ISCAS), Proceedings of 2010 IEEE International Symposium
+on. IEEE, 2010.</li>
+<li><a href="http://deeplearning.net/reading-list/">http://deeplearning.net/reading-list/</a></li>
+<li><a href="http://deeplearning.net/tutorial/">http://deeplearning.net/tutorial/</a></li>
+<li><a href="https://plus.google.com/communities/112866381580457264725">The
+Deep Learning Community on Google Plus</a> is worth following in order
+to get an informal feel for the state of the art.</li>
+<li>"<a href="http://www.indiegogo.com/projects/neural-networks-and-deep-learning-book-project">Neural
+    Networks and Deep Learning Book Project</a>"</li>
+<li>"<a href="http://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=6541932">Special
+    Section on Learning Deep Architectures</a>" in IEEE Transactions
+    on Pattern Analysis and Machine Intelligence, Issue 8, August 2013</li>
+</ul>
+
+
+<h4>Open source tools for deep learning</h3>
+<p>Deep neural networks are computationally very expensive (especially
+during training), hence it will almost certainly be necessary to run
+the net on a desktop computer with a fast GPU.  GPU programming is
+notoriously tricky.  But don't worry; you won't have to write
+frightening <a href="http://en.wikipedia.org/wiki/GPGPU">GPGPU</a>
+code directly like Alex Krizhevsky did with his
+  <a href="http://code.google.com/p/cuda-convnet/">cuda-convnet</a>
+(unless you want to!).  Instead, a Python tool
+called <a href="http://deeplearning.net/software/theano/">Theano</a>
+abstracts the implementation details away.  You just write Python;
+then Theano does all the hard work of running that code on a GPU, and
+is surprisingly
+fast.  <a href="https://archive.org/details/Scipy2010-JamesBergstra-TransparentGpuComputingWithTheano">Here's
+a 20 minute video intro to Theano</a>.  Building further on top of
+Theano (and making your life easier still) is
+the <a href="http://deeplearning.net/software/pylearn2/">PyLearn2
+library</a> which allows you to specify deep learning networks with
+  a relatively minuscule amount of code.</p>
+
+<p>Software for doing deep learning</p>
+<ul>
+<li>Alex
+  Krizhevsky's <a href="http://code.google.com/p/cuda-convnet/">cuda-convnet</a>
+  (and see Daniel
+  Nouri's <a href="https://github.com/dnouri/cuda-convnet">fork of cuda-convnet</a> which includes dropout)</li>
+<li><a href="http://deeplearning.net/software/pylearn2/">PyLearn2</a>
+  (which
+  includes <a href="http://deeplearning.net/software/pylearn2/library/alex.html">a
+ wrapper for cuda-convnet</a>)</li>
+<li><a href="https://github.com/nitishsrivastava/deepnet">deepnet</a>
+  GPU-based python implementation of some deep learning algorithms (which wraps cuda-convnet)</li>
+<li><a href="https://github.com/hannes-brt/hebel">Hebel</a> doesn't
+  (yet) include convolutional neural networks (<a href="https://plus.google.com/u/0/+HannesBretschneider/posts/KAzRBm5McqX">discussion on G+</a>)</li>
+</ul>
+
+<p>Software for doing fast numeric computation</p>
+<ul>
+<li>Theano</li>
+<li><a href="http://torch.ch/">Torch7</a> - "Torch7 is a scientific
+  computing framework with wide support for machine learning
+  algorithms. It is easy to use and provides a very efficient
+  implementation, thanks to an easy and fast scripting language,
+  LuaJIT, and an underlying C implementation."</li>
+<li>gnumpy (which wraps CUDAMat)</li>
+<li>PyCUDA</li>
+</ul>
+
+<h5>"Quick start"</h5>
+
+<p>Whilst Theano and PyLearn2 are probably a great approach if you
+  want a lot of control over your deep learning system, the fastest
+  way to get started (i.e. requiring the least amount of coding and
+  minimal understanding of the theory) is probably to dive straight in and use
+  Alex Krizhevsky's
+  <a href="http://code.google.com/p/cuda-convnet/">cuda-convnet</a>
+  code (or <a href="https://github.com/dnouri/cuda-convnet">Daniel
+  Nouri's fork</a> which implements dropout).  This is the system
+  which won
+  the <a href="http://www.image-net.org/challenges/LSVRC/2012/results.html">2012
+  ImageNet "Large Scale Visual Recognition Challenge"</a>.</p>
+
+<p>So one way to get started fairly quickly with the image
+  classification aspect of the project would be to:</p>
+
+<ol>
+<li>Collect lots and lots of labelled images of plants</li>
+<li>Throw all these images at cuda-convenet and see how well it can
+  do (I could be wrong but I think cuda-convent needs labelled
+  training data)</li>
+<li>Examine the learnt network to try to figure out what worked well
+  and what didn't</li>
+<li>If you still have time, maybe try implementing a suitable network
+  using Theano / PyLearn2 that you can pre-train with loads of
+  unlabelled images and then fine-tune the training with labelled images.</li>
+</ol>
+
+<h3>Plant image datasets</h3>
+<p>Learning algorithms in general, and especially deep neural nets,
+like having huge training datasets.  Some sources of data might
+include:</p>
+
+<ul>
+<li>The <a href="http://www.imageclef.org/node/179">"PlantCLEF
+2014"</a> competition provide a large dataset</li>
+<li><a href="http://www.image-net.org/">ImageNet</a> is a huge
+  database of all sorts of images, including lots of plants and trees.</li>
+<li>The
+    UK's <a href="http://www.nhm.ac.uk/nature-online/life/plants-fungi/">Natural
+    History Museum</a> probably have a large dataset.  You could try
+    writing to them to ask if they'd be interested in collaborating.
+    They probably would, given projects like their "<a href="http://www.nhm.ac.uk/nature-online/british-natural-history/urban-tree-survey/">urban tree survey</a>"
+    where they want people to identify as many trees as possible.</li>
+<li>wageningenur provide a <a href="http://www.wageningenur.nl/en/Expertise-Services/Chair-groups/Environmental-Sciences/Forest-Ecology-and-Forest-Management-Group/Education/Tree-database/Image-databases.htm">list of tree image databases</a>.</li>
+<li><a href="http://plants.usda.gov/gallery.html">http://plants.usda.gov/gallery.html</a></li>
+<li><a href="http://commons.wikimedia.org/wiki/Main_Page">wikimedia commons</a></li>
+<li>flickr</li>
+<li>Google image search (!)</li>
+</ul>
+
+<h3>Existing plant recognition approaches</h3>
+<ul>
+<li><a href="http://www.clef-initiative.eu/documents/71612/efd4b8a1-4568-4c26-a609-5d40beb002d5">This PDF describes the approaches used in the 2013 ImageCLEF 2013
+  Plant Identification Task</a>.  It appears that all teams used
+  "hand-coded" feature detectors. Machine Learning pioneers like
+  Andrew Ng would say that manual feature extraction is not as good
+  as automated feature learning (which is one of the big advantages of
+  deep neural nets: they automatically figure out which features to extract!) </li>
+<li><a href="https://itunes.apple.com/gb/app/leafsnap/id430649829?mt=8#">leafsnap</a>
+    is an iOS app with very similar aims to this project.  It gets an
+    average of 2 stars with reviews like "Unfortunately the database
+    is US only. Many of the wonderful trees I have around me here in
+    England are missing."  Despite these reviews, it has been
+    downloaded about 1 million times, and apparently does achieve
+    state of the art performance.  The project
+    was <a href="http://homes.cs.washington.edu/%7Eneeraj/projects/leafsnap/base/papers/nk_eccv2012_leafsnap.pdf">described
+    in this paper</a> and they are planning to release their <a href="http://leafsnap.com/dataset/">dataset</a>
+    and <a href="http://leafsnap.com/code/">code</a> (although neither are available at the time of
+    writing).</li>
+<li>The UK's National History Museum have a <a href="http://www.nhm.ac.uk/nature-online/british-natural-history/urban-tree-survey/identify-trees/tree-key/index.html">"tree identification key"</a>
+    for manually classifying trees.</li>
+</ul>
+
+<h3>Access to a fast GPU</h3>
+<p>CSG have very kindly said that we can use two workstations with
+  fast GPUs for the plant recogniser project: graphic01 and/or
+  graphic02.  Each is dual-boot Windows and Ubuntu Linux and each has a modern, very fast GPU (the <a href="http://www.nvidia.co.uk/gtx-700-graphics-cards/gtx-780/">nVidia
+  GTX780</a>; <a href="http://en.wikipedia.org/wiki/Comparison_of_Nvidia_graphics_processing_units#GeForce_700_Series">capable
+  of almost 4TFLOPS on 32-bit floats</a> (the acronym 'TFLOP' means 10<sup>12</sup>
+  FLoating-point Operations Per Second).  This level of performance
+  would have put a single GTX780 at the top of <a href="http://en.wikipedia.org/wiki/History_of_supercomputing#Historical_TOP500_table">the supercomputer
+  Top500 list in 1999</a>!) the other specs of the workstations are listed
+  on <a href="http://www.doc.ic.ac.uk/csg/facilities/lab/workstations">CSG's
+  Workstations page</a>.</p>
+
+<h3>Project scope</h3>
+
+<p>This proposal is just a hand-wavey proposal; you certainly wouldn't
+have to implement an entire smart phone application utilising cutting
+edge machine learning techniques.  For example, if you wanted, you
+could drop the smart phone part of the project and focus on "just"
+getting a desktop computer to recognise plant images.  The precise
+specification of the project will be defined in "Report One", due on
+the 31st Jan.  We can tailor the project to your group's interests.
+And, of course, no one will expect you to produce a really high
+performing plant recogniser in a single term!  You just need to give
+it your best shot (and try to have fun with it!)</p>
+
+<h4>Aspects of the project</h4>
+
+<p>If there are members of your team who want to focus on non-ML
+  aspects then here are some ideas for non-ML things to do on this
+  project, if you wanted:</p>
+
+<p>Building a complete smart phone plant recogniser app will require
+are at least three or four components: the phone app; the server; the
+'plant categoriser'; acquiring and pre-processing training materials.
+The basic idea is that a smart phone probably doesn't have sufficient
+processing power to do the image classification on the phone (at
+least, not without very time-consuming optimisation of your code; and
+possibly running your code on the phone's GPU) so you'll probably need
+to do the image classification on a server.</p>
+
+<p>Here are some brief hand-wavey ideas about each component.  Just
+to emphasise: the list below is just to give you a feel for the
+project; you can completely ignore this list if you have better
+ideas!</p>
+
+<h5>The phone app</h5>
+<ul>
+<li>Let user take several photos, then the user selects 1 or more
+  "good" images to upload to the plant recognition server</li>
+<li>When the server responds, display the top 5 (?) answers 
+  with confidences for each answer.  The user can then select the
+  correct answer (this feedback could then be used to refine the
+  classification engine).</li>
+<li>Let the user click on each answer to find out more about that plant.
+  This data could be sourced from Wikipedia or, perhaps, from the
+  Natural History Museum.</li>
+<li>Integrate with Siri / Google Voice?  e.g. the user just takes a photo
+  of a tree and then asks the phone "what fruit does this tree
+  produce?"</li>
+<li>Could you do the whole app as an HTML5 app so that it can run on
+  any (modern) platform? HTML5 has
+  a <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/Camera">Camera
+  API</a>.  If you do the smart phone app as a native app (rather
+  than HTML5) then maybe also consider building an HTML5 app so folks
+  can use the classifier though a desktop computer.</li>
+<li>Record geographical location and date with each image.  Perhaps
+  the image classifier will be able to use this information to refine
+  its classifications. Have a setting in the app to disable the recording of
+  geo location, just in case some users are nervous about uploading
+  their geo location.  Could also record compass heading, tilt and
+  focus distance (if available) to allow the precise location of the
+  plant to be estimated (as distinct from the location of
+  the <em>phone</em>).</li>
+<li>Depending on how your image classification system works, the app
+  might need to guide the user to photograph close-ups of the leaves,
+  bark, seeds etc.  Or perhaps the user would first take a single
+  photo of the whole plant and then, if the classifier fails to get a
+  confident match, the system would guide the user to take close ups
+  to give the classification system more data to work with.</li>
+<li>Of course, the app will need to be able to communicate with your
+  server and will need to fail gracefully when there are network
+  issues.  Don't leave your users staring and a frozen screen for
+  ages!  Just a simple progress bar can make the wait much less
+  frustrating for your users.</li>
+<li>Maybe the user could save a list of favourite plants, and view
+  their favourite plants on a map.</li>
+<li>Integrate with twitter.  e.g. add a button to tweet "I just
+  found &lt;<em>plant name</em>&gt; in &lt;<em>location</em>&gt; using
+  &lt;<em>name of app</em>&gt;."</li>
+<li>I'm not certain but I think that, if you're starting from
+  scratch, it may be easier to start developing for Android rather
+  than iOS (iOS is thoroughly locked down).  Could be wrong though.</li>
+</ul>
+
+<h5>The server</h5>
+<ul>
+<li>The core functionality is to receive images from smart phone / web
+  clients, pass these images to your
+  classification engine, and then send the output of the
+  classification engine to the correct client.  It must fail
+  gracefully if the classification engine fails to return an answer.
+  The classification engine may run on a different computer (e.g. a
+  computer with a fast GPU).</li>
+<li>The server will need to implement a 'job queue'; and it should probably be
+  able to spread the load across multiple classification engines each
+  running on a different machine (what
+  happens if your app becomes so popular that a single classification
+  engine can't keep up with demand?!)  Maybe the server should respond
+  immediately to each request with an "estimated wait time" so users
+  can be informed if there is a long wait before the classification
+  engine becomes available for their job.</li>
+<li>Use classification results to crowd-source a map of plants (the Natural History Museum might
+  want to integrate this into their "<a href="http://www.nhm.ac.uk/nature-online/british-natural-history/urban-tree-survey/">Urban tree survey</a>"). Perhaps use
+  <a href="http://www.openstreetmap.org">OpenStreeMap</a>. You'll need
+  to estimate the exact location of each plant so you can attempt to
+  protect yourselves from counting a plant multiple times if multiple
+  users photograph the same plant.  Perhaps allow users to annotate
+  plants (e.g. "this tree looks like it is diseased").  Maybe allow
+  users to annotate individual photos of a plant (e.g. "close up of
+  brids' nest found in this tree").  If you do find
+  multiple users taking photos of the same plant then keep all those
+  photos so you can then keep a photographic "history" of the
+  plant.</li>
+</ul>
+
+<h5>The classification engine</h5>
+<ul>
+<li>Train just one classifier to do whole plant and leaves and seeds and bark?
+Or use separate classifiers for each segment of a plant?  If you use separate classifiers, will
+  the user have to label each photo as "leaves", "seed" etc?  Or
+  could you train a classifier to do automatic segmentation (e.g. see
+  <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6338939&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6541932%29">Farabet at al 2013</a>)?</li>
+<li>If using deep learning techniques, would you do unsupervised
+  pre-training (which would allow you to use unlabelled images during
+  pre-training) or train the whole net in a supervised fashion (which
+  may be appropriate if you have enough labelled examples and should
+  probably be the first thing you try)</li>
+<li>Could you take advantage of the geographical location and season
+  to refine your hypotheses?  If so, would this be done by feeding
+  this information into your image classifier (e.g. if you used neural
+  nets then perhaps you could have simple "date" and "geo location"
+  inputs which connect to the upper layers?)  Or perhaps it would
+  make more sense to use Bayesian statistics to combine evidence from
+  your classifier with prior knowledge about the geographical and temporal
+  distribution of plants.  Update your priors when new successful
+  classifications are made.</li>
+<li>If the user provides feedback (e.g. "this is the correct answer")
+  then could you exploit that information?</li>
+<li>If the user takes multiple images of the same plant then how best
+  to use these multiple images to come up with a good answer?  Maybe
+  just run each image through your classifier and then return the
+  "majority vote"?</li>
+<li>Maybe try to train your classifier
+  on <a href="http://en.wikipedia.org/wiki/Phylogenetics">phylogenetic</a>
+  data so it can make sensible guesses when it doesn't know the exact
+  answer.  This is known as
+  "<a href="http://en.wikipedia.org/wiki/Inductive_transfer">transfer
+  learning</a>".  I believe the basic idea is that you pre-train a
+  deep neural network in an unsupervised fashion on phylogenetic data
+  (so it learns relationships between plants) and then you plug in a
+  new lower set of input layers to map from image data to these
+  pre-learnt representations. e.g. see section "2.4 Multitask and
+  Transfer Learning"
+  in <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6472238&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6541932%29">Bengio
+  at al 2013</a>. </li>
+<li>experiment with multiple ML techniques</li>
+</ul>
+
+<h5>Acquiring and pre-processing training images</h5>
+<ul>
+<li>scrape the plant image datasets listed above for images of plants
+    (if you use deep learning with unsupervised pre-training then the
+    images don't all have to be labelled).  Lots of scope to
+    parallelise this scraping and run it on multiple DoC machines so
+    you can suck in millions of images.</li>
+<li>Extract dates and location from the EXIF metadata in the
+  images to produce priors for geographical and temporal
+  distributions.</li>
+<li>There are lots of tricks to process your training images to
+  effectively produce an even larger training set.  e.g. horizontally
+  flip images, crop, zoom, rotate a little, change brightness and
+  contrast a little, add occlusions.</li>
+<li>Maybe get phylogenetic / geographical distribution / temporal
+  distribution data
+  from <a href="http://en.wikipedia.org/wiki/DBpedia">DBpedia</a>.  I
+  believe the ImageCLEF dataset also has geo location data.</li>
+</ul>
+
+<p>Just to emphasise: <em>you are certainly not expected to implement
+    all these ideas</em>!  It would take years to implement all these
+    features!  I only mention them to give a feel for the potential
+    breadth of the project, if breadth is what you want (but, of
+    course, be aware that Spring term will fly past and you should
+    keep your group project specification as simple as possible).</p>
+
+<h3>Risks and benefits of this project</h3>
+
+<p>It is important to point out that MSc group projects aren't marked on
+your ability to implement bleeding-edge computer science.  For
+example, the "Best MSc Computing Project" from Spring 2012 was a
+lovely new website for a local doctors' surgery.  If your aim is to
+maximise your chance of winning "best project" whilst minimising your
+effort then embarking on a project which makes use of bleeding-edge
+tools and techniques carries some risk!  We must also point out that
+neither supervisor on this project does computer vision research as
+their 'day job' (although Dr Knottenbelt did do some <a href="http://link.springer.com/article/10.1007/BF00989290#page-2">research on South
+  African flora in the 1990s</a>!).  But Jack will be using Deep Learning techniques for
+his PhD in Spring; and will do all he can to help you... but you do
+need to be aware that you will quickly become the department's experts
+(possibly even the world's experts) in using computer vision for
+recognising plants; and hence you will need to be comfortable with
+being pioneers ;).</p>
+
+<p>But there are real benefits of the project.  For starters, you have
+a real chance of building a system which can compete very favourably
+in the <a href="http://www.imageclef.org/node/179">"PlantCLEF
+2014"</a> competition; and it's very rare for MSc groups projects to
+have a chance of competing in international competitions.  Secondly,
+"deep learning" is a topic which a lot of people are excited about
+(including Google, Facebook etc) but very few people have hands-on
+experience with the technique; so if you want to do research or get a
+job in machine learning then a project on deep learning should look
+attractive to employers and academics.  Also, whilst it is true that
+  machine learning can become terrifyingly mathsy, it is also the case
+  that image classification is a very popular application of ML in
+  general and deep learning in particular, so there are lots of papers
+  and quite a lot of code that you can use (i.e. you can take existing
+  approaches and re-use them without having to understand the innards
+  really well). Also, there is great scope to
+turn this project into a successful app; the demand for such as app is
+demonstrated by the fact that the leafsnap app was
+downloaded <a href="http://homes.cs.washington.edu/%7Eneeraj/projects/leafsnap/base/papers/nk_eccv2012_leafsnap.pdf">"almost
+a million times"</a> as of 2012.  And, finally, the project should be
+fun!  (if you get excited by using cutting edge techniques to build a
+system which has a good shot at doing object recognition almost as
+well as a human)</p>
+
+<h3>Running multiple groups on this project / alternative image
+  classification challenges</h3>
+
+<p>If lots of groups are interested in this project then we may
+  consider running more than one group on this project (<b>up to a
+  maximum of two or three groups at a real push</b>).  If everyone
+  wants to then you could compete directly; perhaps using different
+  machine learning techniques.  Or you could collaborate in some way
+  (e.g. split the project up).  Or groups could target different image
+  classification challenges (I think this option would be my
+  preference.  One advantage of going this route is that groups could
+  help each other out more on the image classification techniques.
+  And, of course, each group would have the potential to have a
+  greater impact on the target problem domain.).  There are lots of other object classification tasks
+  ripe for innovation.  e.g. classifying microscope images of blood
+  cells as either "healthy" or "malaria-infected".  (A research group
+  at <a href="http://blog.wellcome.ac.uk/2013/03/05/crowdsourcing-malaria-diagnosis-with-games/">UCLA
+  recently built a "gamified" solution to this problem</a>:)
+ </p>
+
+<img src="http://wellcometrust.files.wordpress.com/2013/03/biogames.jpg?w=600&h=450">
+
+<h2>Yet more details</h2>
+
+<p>I have been having email conversations with groups about this
+  project.  To make sure that all groups have access to the same
+  information, I'll put even more info about this project <a href="https://docs.google.com/document/d/1a5yTSLvO7Ti3P7l8KLltc7DO_JaQLP4XQUfIJw--Ib4/pub">here</a>.</p>

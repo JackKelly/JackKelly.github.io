@@ -1,0 +1,269 @@
+---
+title: UK Domestic Appliance-Level Electricity (UK-DALE) dataset
+permalink: /data/
+layout: page
+---
+
+<h1>April 2017 release</h1>
+
+<p>This dataset records the power demand from five houses. In each
+  house we record both the whole-house mains power demand every six
+  seconds as well as power demand from individual appliances every six
+  seconds.  In three of the five houses (houses 1, 2 and 5) we also
+  record the whole-house voltage and current at 16 kHz.</p>
+
+<p>Each release of the dataset is labelled with the month and year.
+  The most recent (and probably final) release is for April 2017.
+  UK-DALE now includes 4.3 years of data for house 1.</p>
+
+<h2>Paper</h2>
+
+<p>The following paper describes the data recording system and the
+  January 2015 release of the dataset.  Please cite this paper if you
+  use the dataset or the recording hardware:</p>
+
+<p>
+Jack Kelly and William Knottenbelt.
+<b>The UK-DALE dataset, domestic appliance-level electricity demand and whole-house demand from five
+UK homes</b>.
+<a href="http://www.nature.com/sdata"><em>Scientific
+    Data</em></a> <b>2</b>, Article number:150007, 2015, 
+DOI:<a href="http://dx.doi.org/10.1038/sdata.2015.7">10.1038/sdata.2015.7</a> <br>
+</p> 
+
+
+<h4>BibLaTex</h4>
+
+<pre>@Article{UK-DALE,
+  Title        = {The {UK-DALE} dataset, domestic appliance-level
+                  electricity demand and whole-house demand from five {UK} homes},
+  Author       = {Jack Kelly and William Knottenbelt},
+  Journaltitle = {Scientific Data},
+  Year         = {2015},
+  Date         = {2015/03/31},
+  Number       = {150007},
+  Volume       = {2},
+  Doi          = {10.1038/sdata.2015.7}
+}
+</pre>
+
+<h4>BibTex</h4>
+
+<pre>@Article{UK-DALE,
+  title        = {The {UK-DALE} dataset, domestic appliance-level
+                  electricity demand and whole-house demand from five {UK} homes},
+  author       = {Jack Kelly and William Knottenbelt},
+  journal      = {Scientific Data},
+  year         = {2015},
+  date         = {2015/03/31},
+  number       = {150007},
+  volume       = {2},
+  doi          = {10.1038/sdata.2015.7}
+}
+</pre>
+
+<h4>Small correction to the paper</h4>
+
+<p>The paper states:</p>
+
+<blockquote>
+  The uncompressed 16 kHz 24-bit files would require 28.8 GBytes per
+  day so we compress the files using the Free Lossless Audio Codec
+  (FLAC) to reduce the storage requirements to &#8776; 4.8 GBytes per day.
+</blockquote>
+
+<p>In fact, the uncompressed 16 kHz 24-bit files require 8.3 GBytes per
+day, <em>not</em> 28.8 GBytes per day!</p>
+
+<h2>Brief description of the data formats available</h2>
+
+<a name="16kHz_data"></a>
+<h3>16 kHz voltage and current from homes 1, 2 and 5</h3>
+
+<p>The complete April 2017 version of the 16kHz dataset occupies 7.6 TBytes.</p>
+
+<p>The 16 kHz data are stored as a sequence of stereo FLAC files
+  ("FLAC" stands for "Free Lossless Audio Codec").  Each FLAC file is
+  about 200 MBytes.  One channel is whole-house voltage, the other is
+  whole-house current.</p>
+
+<p>The name of each FLAC file is
+  the <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX
+  timestamp</a> at the start of the recording for that flac file.  The
+  underscore in the filename should be interpreted as a decimal mark
+  (i.e. it separates the integer part from the fractional part of the
+  UNIX timstamp).</p>
+
+<p>For more info about the high frequency data, please
+  see <a href="http://dx.doi.org/10.1038/sdata.2015.7">our paper</a>
+  and the
+  <a href="https://github.com/JackKelly/snd_card_power_meter">snd_card_power_meter github repository</a> (the code we
+  used to record the high frequency data.)</p>
+
+<a name="converting_FLAC"></a>
+
+<h4>Converting from FLAC files to volts and amps</h4>
+
+<p>First you probably want to convert from FLAC (a
+  lossless audio compression) to WAV. There are many audio
+  tools that can convert from FLAC to WAV.  I often
+  use <a href="http://sox.sourceforge.net/">sox</a>.</p>
+
+<p>Once you have the WAV file, you'll need to convert from the [-1,1]
+  range of values in the WAV file to volts and amps.  You'll need
+  the <code>calibration.cfg</code> file for the house in
+  question. This file specifies an <code>amps_per_adc_step</code>
+  parameter and a <code>volts_per_adc_step</code> parameter.  To
+  calculate volts from the WAV files, use this
+  formula: <code>volts_per_adc_step &times; number_of_ADC_steps
+  &times; value_from_wav_file</code>. The
+  variable <code>number_of_ADC_steps=2<sup>31</sup></code> for houses
+  1 and 2 and <code>number_of_ADC_steps=2<sup>15</sup></code> for
+  house 5.  Use a similar formula for amps. (The software we use for
+  recording the data used 32-bit integers to capture the audio signal
+  for houses 1 and 2 and 16-bit integers for house 5.  Hence, for
+  houses 1 and 2, there are 2<sup>32</sup> ADC steps for the full
+  range from [-1,1] and 2<sup>31</sup> ADC steps for half the range
+  from [0,1] or [-1,0].)  You can safely ignore the
+  '<code>phase_difference</code>' parameter and just assume that the
+  measurement hardware introduces no significant phase shift.</p>
+
+<h3>NILMTK HDF5 version</h3>
+
+<p>An <a href="https://support.hdfgroup.org/HDF5/">HDF5</a> version of
+the 1-second and 6-second data (for use with
+  <a href="http://nilmtk.github.io/">NILMTK</a>) is <a href="http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2015/UK-DALE-disaggregated/">available on the UKERC EDC</a> and via my FTP server</p>
+
+<h3>Utility meters</h3>
+
+<p>Gas and electricity utility meter readings for house 1 are available in two
+  formats:</p>
+
+<ul>
+  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=html">web page</a></li>
+  <li><a href="https://docs.google.com/spreadsheet/pub?key=0Astzk9pV1BPddC1UczZYdGEwQTktdHIyN194WmpxZ2c&amp;single=true&amp;gid=0&amp;range=A1%3AD999&amp;output=csv">CSV (UTF-8)</a></li>
+</ul>
+
+
+<h2>Download</h2>
+
+<h3>January 2015 version from the UK Energy Research Council's Energy Data Center</h3>
+
+<p>The UKERC EDC currently holds the Jan 2015 version of UK-DALE.  The EDC will soon have the Apr 2017 version too.  Please cite the data DOI if you use the dataset!</p>
+
+<ul>
+  <li>The January 2015 release of the 1 second and 6 second data are
+  available from the UK Energy Research Council's Energy Data Centre
+  using our dataset
+    DOI:<a href="http://dx.doi.org/10.5286/UKERC.EDC.000001">10.5286/UKERC.EDC.000001</a></li>
+  <li>The Jan 2015 release of the 16 kHz data can be downloaded from
+  the UKERC EDC via dataset
+  DOI:<a href="http://dx.doi.org/10.5286/UKERC.EDC.000002">10.5286/UKERC.EDC.000002</a></li>
+</ul>
+
+
+<h3>April 2017 version from my Imperial FTP server</h3>
+
+<p>The April 2017 version of UK-DALE is available from my Imperial FTP server.</p>
+
+<p><strong>The Imperial FTP server will be disconnected some time in
+    Summer 2017.  I have transferred the April 2017 version of UK-DALE
+    to the UKERC EDC, and it will be made available on the EDC soon.
+    When my FTP server is disconnected, UK-DALE will only be available
+    from the UKERC EDC.</strong></p>
+
+<p>I'd recommend using a 'proper' FTP client program to connect
+  (because it will give useful error messages and be able to resume
+  downloading if the network connection fails).  For example, you
+  could use <a href="https://filezilla-project.org/">FileZilla</a>
+  (it's free and open-source).  Or, if you're feeling lazy, you could
+  try just pointing your web browser
+  to <a href="ftp://achillea.doc.ic.ac.uk:55555/UK-DALE/">ftp://achillea.doc.ic.ac.uk:55555/UK-DALE/</a></p>
+
+<p>You can establish an anonymous FTP connection using these details
+(please note the unusual port!):</p>
+
+<pre>
+      host: achillea.doc.ic.ac.uk
+      port: 55555
+  username: anonymous
+  password: &lt;your email address&gt;
+ directory: /UK-DALE/
+</pre>
+
+
+<h2>Dataset license</h2>
+<p>This data is made freely available under Creative Commons
+  Attribution 4.0 International (CC BY 4.0). See more at <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></p>
+
+
+<h2>Change log</h2>
+
+<h3>April 2017 release</h3>
+
+<ul>
+  <li>House 1 now includes 4.3 years of data (starting on 09/11/2012
+  22:28:15 GMT and ending on 26/04/2017 18:35:53 BST).</li>
+  <li>The FLAC files have been moved into a directory structure of
+  the form <code>house_1/2015/wk04</code> This change is required to
+    match the directory structure used by the UKERC EDC.</li>
+  <li>BUG FIX: In previous versions of UK-DALE, the directory storing
+  16 kHz FLAC files for house_5 incorrectly had some FLAC files which
+  were actually recorded from house_1.  These files were recorded from
+  house_1 during 2015, weeks 34-41.  These files have been moved to
+  the house_1 directory, where they belong!</li>
+  <li>BUG FIX: In previous versions, the directory storing 16 kHz FLAC
+  files for house_5 contained five WAV files.  These have now been
+  converted to FLAC.  However, these five files are almost certainly
+  too short.  These files are listed in
+    house_5/KNOWN_BAD_FILES.txt</li>
+  <li>The ZIP file in previous versions contained some cruft that
+  wasn't required.  For example, it contained a
+  file <code>building1/channel_54.dat</code> which should be ignored.
+  The new ZIP file is nice and clean!</li>
+</ul>
+
+
+<h3>May 2016 release</h3>
+
+<ul>
+  <li>House 1 now includes 3.5 years of data (starting on 09/11/2012
+    22:28:15 GMT and ending on 13/05/2016 12:11:37 BST).</li>
+</ul>
+
+<h3>August 2015 release</h3>
+
+<ul>
+  <li>House 1's FLAC files and 6-second files have been updated to
+  17th August 2015.  So there are now 2.5 years of data for house
+    1!</li>
+  <li>The fridges, kettles, washing machines, microwaves and dish
+  washers now have some additional metadata: on_power_threshold,
+  max_power, min_on_duration and min_off_duration.  This metadata
+  helps NILMTK's Electric.get_activations() function to extract
+  individual appliance activations.</li>
+</ul>
+
+<h3>January 2015 release</h3>
+
+<ul>
+<li>We now have five homes in the dataset (up from four in the last release).</li>
+<li>We have 16 kHz recordings of mains voltage and current from houses
+  1, 2 and 5.  This data is available for download over FTP.  In
+  total, we now have 6 TBytes of data (that's compressed)!</li>
+<li>House 1 has 655 days of recordings and 54 meters installed</li>
+<li>The new revision of the paper includes lots of plots describing
+  the data (most plots produced with <a href="http://nilmtk.github.io/">NILMTK</a>.  And <a href="https://github.com/JackKelly/ukdale_plots">here are the scripts to produce the plots in the paper</a>).</li>
+<li><a href="https://github.com/JackKelly/UK-DALE_metadata">The
+metadata</a> has been updated to include some more information about
+each house (number of occupants, year the house was built etc).</li>
+<li>The 'ragged' third column in the IAM <code>.dat</code> files recording button
+  press data has been moved to <code>channel_X_button_press.dat</code>
+  files.  So none of the <code>.dat</code> files have ragged columns any more.
+  This should make the data easier to load.</li>
+</ul>
+
+
+<h2>Contact</h2>
+
+<p>Email <a href="mailto:jack@jack-kelly.com">jack@jack-kelly.com</a>, the guy who maintains this dataset.</p>
