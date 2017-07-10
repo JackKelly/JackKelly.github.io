@@ -41,7 +41,7 @@ First configure `package.el` to use
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("marmalade" . "https://marmalade-repo.org/packages/") t)
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -76,7 +76,7 @@ This allows you to easily install all these other plug ins:
 Other plugins which come with Emacs but require some configuration:
 -------------------------------------------------------------------
 
--   [recently used files](http://www.emacswiki.org/RecentFiles)
+-   [recently used files](http://www.emacswiki.org/emacs/RecentFiles)
 -   [80 column rule](http://www.emacswiki.org/emacs/EightyColumnRule)
 -   [setup emacs python mode to use
     ipython](http://www.emacswiki.org/emacs/PythonProgrammingInEmacs#toc5)
