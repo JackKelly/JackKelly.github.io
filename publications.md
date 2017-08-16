@@ -10,7 +10,8 @@ For more information, please see [my Google Scholar page](https://scholar.google
 * Jack Kelly<br/>
 [**Disaggregation of Domestic Smart Meter Energy Data**](/files/writing/jack-kelly-phd-thesis.pdf)<br/>
 PhD thesis<br/>
-April 2017
+April 2017<br/>
+<http://hdl.handle.net/10044/1/49452>
 
 
 # 2016
