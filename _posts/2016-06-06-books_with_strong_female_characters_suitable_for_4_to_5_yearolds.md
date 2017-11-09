@@ -44,6 +44,7 @@ Lists of books
 Books
 -----
 
+-   "[Zita The Spacegirl](http://zitaspacegirl.com)" - Brilliant.  Both my kids love this series of three books (Olive is 6 and Max is 3).
 -   "[The Ordinary
     Princess](https://en.wikipedia.org/wiki/The_Ordinary_Princess)",
     written and illustrated by M. M. Kaye, 1980 (thanks to Tim Colbourn
