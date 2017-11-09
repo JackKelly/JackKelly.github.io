@@ -10,10 +10,7 @@ suitable for 4 to 5 yearolds. Characters who can think for themselves.
 And get shit done. Without a prince. Or without trying to impress a
 prince."
 
-I got loads of great suggestions from my friends. And these suggestions
-came in several different ways (chatting over coffee, facebook comments
-etc). So this blog post an attempt to maintain a list of links on the
-topic of "books with strong female characters".
+I got loads of great suggestions from my friends:
 
 Lists of books
 --------------
