@@ -22,3 +22,5 @@ The second idea is the first project that the non-profit will work on: forecasti
 Please don't interpret my resignation as a comment on DeepMind's likely climate impact.  We all need DeepMind to have huge climate impact.  And, if anyone can have impact, it's the astounding folks in DeepMind.  Heck, they already [are having impact](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/).
 
 I'm extremely excited to start this non-profit; and can't wait to start building things!
+
+I'll post progress updates to twitter and my blog.  Please feel free to email me at jack@jack-kelly.com if you'd like more info.  I probably won't get much coding done in January - Jan will mostly be spent setting up the non-profit, building a website etc.  And settling on a name!
