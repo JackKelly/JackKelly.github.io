@@ -5,7 +5,7 @@ categories: [machine learning, climate change mitigation, software engineering]
 
 I left Google DeepMind.  This is a particularly odd decision because I love the team I worked with at DeepMind.  Since joining DeepMind, I've been constantly amazed by this team's compassion, focus, intelligence, optimism, and desire for real-world impact.  I've learnt a huge amount from DeepMind, and I will miss this team dearly.  Leaving this awesome team is enormously difficult.
 
-So, why am I leaving?
+So, why did I leave?
 
 I'm terrified by climate change; and I'm increasingly convinced that climate change mitigation is a '_go big or go home_' thing.  I have two ideas for how to help.  These ideas might be wrong.  But I want to give them a shot.
 
