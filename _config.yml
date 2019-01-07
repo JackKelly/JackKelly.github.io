@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Jack Kelly
 email: jack@jack-kelly.com
-description: "I try to mitigate climate change using computer science.  I am a Research Engineer at [DeepMind](https://deepmind.com), mostly working on energy problems. Previously, I worked on energy disaggregation as a post-doc at [Imperial College London](https://www.imperial.ac.uk)."
+description: "I try to mitigate climate change using computer science.  I am building a non-profit research lab, focused on reducing greenhouse gas emissions.  Previously, I was a Research Engineer at [DeepMind](https://deepmind.com), mostly working on energy problems."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jack-kelly.com"
 twitter_username: jack_kelly
