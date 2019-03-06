@@ -108,7 +108,7 @@ Some commands
     post](http://stackoverflow.com/questions/2580650/how-can-i-reload-emacs-after-changing-it).
 -   [reload changes recursively in
     IPython](http://stackoverflow.com/a/5399339/732596)
--   [magit cheat sheet](http://daemianmack.com/magit-cheatsheet.html)
+-   [magit cheat sheet](https://github.com/magit/magit/wiki/Cheatsheet)
 -   [debugging Python in
     Emacs](http://twistedmatrix.com/documents/current/core/howto/debug-with-emacs.html)
 -   `C-<number>-x tab` rigidly indent region by <number> spaces. e.g.
