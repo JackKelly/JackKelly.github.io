@@ -16,7 +16,7 @@ In the mean time, here are a few ideas for how to help!
   * We also need a **logo** :)
 * We'd love help setting up and running a **web discussion forum** (maybe using discourse).
 * **Data!** Do you work at an organisation with solar PV power timeseries data or PV location data or satellite imagery?  (e.g. an inverter company, or a solar analytics company)?  Or do you know someone who does?!  If so, _please_ get in touch.  I'm very hungry for good PV data!
-  * If you have PV power data, please either email it to me (jack@jack-kelly.com), or upload the power data to [PVOutput.org](https://pvoutput.org/).
+  * If you have PV power data, please either email it to me (jack@OpenClimateFix.org), or upload the power data to [PVOutput.org](https://pvoutput.org/).
 * **Map the geographical location of PV systems in [Open Street Map](https://www.openstreetmap.org)**, using [tag:generator:source=solar](https://wiki.openstreetmap.org/wiki/Tag:generator:source=solar).
 * **Domain expertise!** If you know about cloud forecasting / aerosol forecasting / determining the toplogy of the electricity network / related things then please email me!
 * Erm... it's always awkward talking about **money** but, um, if you are into climate philanthropy - or if you know of anyone who's into climate philanthropy - then please email me!  My intention is that Open Climate Fix will reduce emissions by millions of tonnes (at least), at a cost of a few dollars per tonne.  (i.e. considerably cheaper than most other interventions).
