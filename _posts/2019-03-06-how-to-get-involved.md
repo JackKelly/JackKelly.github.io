@@ -3,7 +3,7 @@ title: "How to get involved with Open Climate Fix"
 categories: [non-profit, machine learning, climate change mitigation, software engineering]
 ---
 
-I'm building a non-profit called [Open Climate Fix](http://openclimatefix.org), entirely focused on using open-science to help fix climate change ASAP.  We'd love help :)  This blog post lists a few concrete things we need help with.
+I'm building a non-profit called [Open Climate Fix](http://openclimatefix.org), entirely focused on using open-science to help fix climate change ASAP.  We'd love help :)  This blog post lists a few concrete things we need help with. 
 
 First, a quick disclaimer: OCF is still very, _very_ young.  We don't yet have funding, a bank account, or an online forum.  (These things will come!)  I'm spending the majority of my time meeting people (I've had over 100 meetings over the last 7 weeks, and plenty more planned - I'm trying hard to focus on meetings relevant to solar PV now).  So, please be patient with me!  Once I actually start writing code and releasing data, then there will be much more for folks to get stuck into.
 
