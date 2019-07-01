@@ -5,7 +5,7 @@ categories: [open climate fix, machine learning, climate change mitigation, soft
 
 At [Open Climate Fix](http://openclimatefix.org), we're about to start work on our solar electricity (PV) nowcasting project.  The aim of this project is to help reduce emissions (and costs) by forecasting solar electricity power production at high temporal and spatial resolution, but with a forecast time horizon of a few hours.  We'll use machine learning to combine satellite images, numerical weather predictions, and live solar PV data.  All our research code will be open source; and we'll blog about our results (including negative results); and we're working hard to make it easy for other researchers to access the data necessary to do this research :)
 
-The be kept up to date, please [sign up to OCF's newsletter](https://eepurl.com/guCjvH) (and/or [follow Jack on Twitter](https://twitter.com/jack_kelly)!).  If you'd like to get involved, please register your interest on [OCF's volunteer register](https://airtable.com/shrl59GJ96csVF4WB) and/or join the conversations on [OCF's forum](http://openclimatefix.discourse.group/).
+To be kept up to date, please [sign up to OCF's newsletter](https://eepurl.com/guCjvH) (and/or [follow Jack on Twitter](https://twitter.com/jack_kelly)!).  If you'd like to get involved, please register your interest on [OCF's volunteer register](https://airtable.com/shrl59GJ96csVF4WB) and/or join the conversations on [OCF's forum](http://openclimatefix.discourse.group/).
 
 
 ## Why is solar electricity nowcasting useful?
