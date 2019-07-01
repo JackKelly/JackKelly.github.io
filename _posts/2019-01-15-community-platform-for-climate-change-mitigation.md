@@ -1,6 +1,6 @@
 ---
 title: "Magazine or community platform for people interested in practical action to limit climate change."
-categories: [non-profit, climate change mitigation]
+categories: [open climate fix, climate change mitigation]
 ---
 
 Over the past week, it has [become clear](https://twitter.com/jack_kelly/status/1082283333202128897) that there are lots of people out there who are highly skilled, and passionate about trying to fix climate change.  This is awesome.

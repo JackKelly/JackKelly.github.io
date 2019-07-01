@@ -1,6 +1,6 @@
 ---
 title: "Starting a non-profit research lab to help fix climate change ASAP"
-categories: [non-profit, machine learning, climate change mitigation, software engineering]
+categories: [open climate fix, machine learning, climate change mitigation, software engineering]
 ---
 
 I left Google DeepMind.  This is a particularly odd decision because I love the team I worked with at DeepMind.  Since joining DeepMind, I've been constantly amazed by this team's compassion, focus, intelligence, optimism, and desire for real-world impact.  I've learnt a huge amount from DeepMind, and I will miss this team dearly.  Leaving this awesome team is enormously difficult.

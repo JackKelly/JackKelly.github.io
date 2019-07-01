@@ -1,6 +1,6 @@
 ---
 title: "How to get involved with Open Climate Fix"
-categories: [non-profit, machine learning, climate change mitigation, software engineering]
+categories: [open climate fix, machine learning, climate change mitigation, software engineering]
 ---
 
 I'm building a non-profit called [Open Climate Fix](http://openclimatefix.org), entirely focused on using open-science to help fix climate change ASAP.  We'd love help :)  This blog post lists a few concrete things we need help with. 
