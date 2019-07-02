@@ -7,6 +7,8 @@ At [Open Climate Fix](http://openclimatefix.org), we're about to start work on o
 
 To be kept up to date, please [sign up to OCF's newsletter](https://eepurl.com/guCjvH) (and/or [follow Jack on Twitter](https://twitter.com/jack_kelly)!).  If you'd like to get involved, please register your interest on [OCF's volunteer register](https://airtable.com/shrl59GJ96csVF4WB) and/or join the conversations on [OCF's forum](http://openclimatefix.discourse.group/).
 
+OCF is also working on mapping the location of PV panels.  We'll blog about the PV mapping project soon :)
+
 
 ## Why is solar electricity nowcasting useful?
 
