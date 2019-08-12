@@ -120,6 +120,39 @@ Some commands
 -   `M-=` show word and character count
 -   `C-c g` go to definition (using Rope)
 
+Fix ModuleNotFound error
+------------------------
+Create `~/.emacs.d/ipython_startup.py`:
+
+```python
+def set_path():
+    import sys
+    old_path = sys.path
+    sys.path = [path for path in sys.path if path]
+    if len(sys.path) < len(old_path):
+        print("Removed '' from path!")
+
+
+set_path()
+```
+
+Change the elpy section of `.emacs` to look like:
+
+```
+(elpy-enable)
+(setq
+ python-shell-interpreter "ipython"
+ python-shell-interpreter-args "/home/jack/.emacs.d/ipython_startup.py -i --simple-prompt")
+```
+
+Adapted from https://emacs.stackexchange.com/a/43978
+
+
+Enable autoreload
+-----------------
+See https://stackoverflow.com/a/43020072
+
+
 Make errors into clickable links in iPython
 -------------------------------------------
 
