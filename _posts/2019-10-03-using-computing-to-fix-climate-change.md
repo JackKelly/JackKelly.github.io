@@ -32,3 +32,5 @@ To achieve scale we need to jump over multiple hurdles:
 Unfortunately, projects tend to attract most funding and media attention around step 3.  But that's in no way sufficient!  We need to get all the way to the final step before we can be confident that a given intervention will actually reduce emissions at scale.
 
 Good luck!  It's gonna be tough.  But we can't fail.  To paraphrase Greta:  If we fail, future generations will never forgive us.
+
+But it's also technically exciting work (and actually quite good fun!) and there's a great community of people using computer science to mitigate climate change!  So, dive in - we need all the help we can get!
