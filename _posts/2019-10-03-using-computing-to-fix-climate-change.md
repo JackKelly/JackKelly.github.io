@@ -17,7 +17,7 @@ If you know of other resources, then please add a comment below or, even better,
 
 ## The challenge of reducing emissions at scale
 
-One quick rant:  All the climate cares about is the scale of emissions reductions.  For the climate to 'notice', we really need to be exploring interventions which can reduce emissions by _at least_ a million tonnes of CO2e per year, and ideally _billions_ of tonnes per year.
+One quick rant:  All the climate cares about is the scale of emissions reductions.  For the climate to 'notice', we need interventions which reduce emissions by _at least_ a million tonnes of CO2e per year, and ideally _billions_ of tonnes per year.
 
 To achieve scale we need to jump over multiple hurdles:
 
@@ -29,8 +29,8 @@ To achieve scale we need to jump over multiple hurdles:
 6. Become financially  sustainable.
 7. Reduce emissions!  (Even if you succeed at all the previous steps, that's no guarantee that you'll reduce emissions at scale.  Maybe there's a rebound effect?  Maybe there are some other unintended consequences?)
 
-Unfortunately, projects tend to attract most funding and media attention around step 3.  But that's in no way sufficient!  We need to get all the way to the final step before we can be confident that a given intervention will actually reduce emissions at scale.
+Unfortunately, projects tend to attract most funding and media attention after completing a proof-of-concept.  But that's in no way sufficient!  We need to get all the way to the final step before we can be confident that a given intervention will actually reduce emissions at scale.  The systems that we're trying to change (such as the energy system) are enormously complex.  Demonstrating success in a small research setting in no way guarantees success at scale.
 
-Good luck!  It's gonna be tough.  But we can't fail.  To paraphrase Greta:  If we fail, future generations will never forgive us.
+Good luck!  It's gonna be tough.  But we can't fail.  To paraphrase Greta:  If we fail, future generations will never forgive us.  (Sorry to be so gloomy!)
 
-But it's also technically exciting work (and actually quite good fun!) and there's a great community of people using computer science to mitigate climate change!  So, dive in - we need all the help we can get!
+But it's also technically exciting work (and actually quite good fun!) and there's a great community of people using computer science to mitigate climate change!  So, dive in - we need your help!
