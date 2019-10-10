@@ -6,12 +6,13 @@ categories: [open climate fix, machine learning, climate change mitigation, soft
 
 If you'd like to use computer science to help mitigate climate change, then check out these resources:
 
-* [ClimateChange.AI](http://climatechange.ai/) - All about using AI to mitigate and adapt to climate change. Check out their excellent [2019 paper](https://arxiv.org/abs/1906.05433) and [sign up](https://www.climatechange.ai/mailing_list.html) to their newsletter!
+* [ClimateChange.AI](http://climatechange.ai/) - All about using AI to mitigate and adapt to climate change. Check out their excellent [2019 paper](https://arxiv.org/abs/1906.05433) and [sign up](https://www.climatechange.ai/mailing_list.html) to their newsletter! Also check out Paul Strobel's six-part illustrated [blog series](https://blog.codecentric.de/en/2019/09/how-to-tackle-climate-change-with-machine-learning-electricity-systems/#post-69396) about the paper.
 * [Open Climate Fix](http://openclimatefix.org) - OCF is the non-profit that I co-founded.  Entirely focused on using open science (especially machine learning) to mitigate climate change.  Please [sign up](https://eepurl.com/guCjvH) to our newsletter and consider [adding your name to our list of volunteers](https://airtable.com/shrl59GJ96csVF4WB)!
 * [Matter More](https://www.mattermore.io/) - 'Use your superpowers in AI and data science to reverse climate change - Discover exciting new initiatives and work opportunities.'
 * [Sliced](https://sliced.org/) - 'We help you find opportunities that have a direct impact on reversing climate change.'
 * [ClimateAction.Tech](https://climateaction.tech/) - 'A global community of tech professionals using our skills, expertise and platforms to support solutions to the climate crisis.'
 * [Bret Victor's blog:  What can a technologist do about climate change - 2015](http://worrydream.com/ClimateChange/#)
+* [Dynamically Typed newsletter](https://dynamicallytyped.com/) - bi-weekly newsletter about AI-powered products and ML research that also features new projects and resources for using AI to tackle the climate crisis in every edition.
 
 If you know of other resources, then please add a comment below or, even better, [submit a pull request](https://github.com/JackKelly/JackKelly.github.io/blob/master/_posts/2019-10-03-using-computing-to-fix-climate-change.md) to improve this list!
 
