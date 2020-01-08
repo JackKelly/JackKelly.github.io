@@ -138,9 +138,10 @@ the 1-second and 6-second data (for use with
   use <a href="http://sox.sourceforge.net/">sox</a>.</p>
 
 <p>Once you have the WAV file, you'll need to convert from the [-1,1]
-  range of values in the WAV file to volts and amps.  You'll need
+  range of values in the WAV file to volts and amps.  In Python, you can load WAV files using Python's built-in
+  <a href="https://docs.python.org/3/library/wave.html"><code>wave</code></a> package. You'll need
   the <code>calibration.cfg</code> file for the house in
-  question. This file specifies an <code>amps_per_adc_step</code>
+  question (found <a href="https://data.ukedc.rl.ac.uk/browse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2015/UK-DALE-16kHz">here</a>). This file specifies an <code>amps_per_adc_step</code>
   parameter and a <code>volts_per_adc_step</code> parameter.  To
   calculate volts from the WAV files, use this
   formula: <code>volts_per_adc_step &times; number_of_ADC_steps
