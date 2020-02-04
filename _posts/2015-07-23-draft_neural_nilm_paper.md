@@ -4,9 +4,8 @@ date: 2015-07-23 16:42:32 +0000
 categories: ["PhD"]
 permalink: /draft_neural_nilm_paper
 ---
-My [draft Neural NILM paper is available
-here](http://www.doc.ic.ac.uk/~dk3810/neuralnilm/neural_nilm.pdf), if
-you're interested (this is currently submitted to a conference)
+My ~~draft Neural NILM paper is available
+here~~, if you're interested (this is currently submitted to a conference) (update: please get the paper from [arXiv](http://arxiv.org/abs/1507.06594)).
 
 Comments are very welcome!
 
@@ -16,6 +15,5 @@ About to go on holiday...
 applied to energy disaggregation" is now on
 [arXiv](http://arxiv.org/abs/1507.06594)
 
-*update 2*: the code isn't available yet but I definitely plan to
-release it.
+*update 2*: the [code is available on github](https://github.com/JackKelly/neuralnilm).
 
