@@ -3,7 +3,6 @@ title: "Using computing to fix climate change"
 categories: [open climate fix, machine learning, climate change mitigation, software engineering]
 ---
 
-
 If you'd like to use computer science to help mitigate climate change, then check out these resources:
 
 * [ClimateChange.AI](http://climatechange.ai/) - All about using AI to mitigate and adapt to climate change. Check out their excellent [2019 paper](https://arxiv.org/abs/1906.05433); [sign up](https://www.climatechange.ai/mailing_list.html) to their newsletter, and [join their forum](https://community.climatechange.ai)! Also check out Paul Strobel's six-part illustrated [blog series](https://blog.codecentric.de/en/2019/09/how-to-tackle-climate-change-with-machine-learning-electricity-systems/#post-69396) about the paper.  And [here's their list of climate change & ML job resources](https://community.climatechange.ai/c/jobs/list-climate-change-ml-job-resources).
@@ -37,3 +36,4 @@ Projects tend to attract most funding and media attention after completing a pro
 Good luck!  It's gonna be tough.  But we can't fail.  To paraphrase Greta:  If we fail, future generations will never forgive us.  (Sorry to be so gloomy!)
 
 But it's also technically exciting work (and actually quite good fun!) and there's a great community of people using computer science to mitigate climate change!  So, dive in - we need your help!
+
