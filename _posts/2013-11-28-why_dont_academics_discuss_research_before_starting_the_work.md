@@ -1,5 +1,5 @@
 ---
-title: "Why don\'t academics discuss research before starting the work?!"
+title: "Why don't academics discuss research before starting the work?!"
 date: 2013-11-28 15:03:26 +0000
 categories: ["open science", "PhD"]
 permalink: /why_dont_academics_discuss_research_before_starting_the_work

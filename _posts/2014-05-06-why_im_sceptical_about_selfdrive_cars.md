@@ -1,5 +1,5 @@
 ---
-title: "Why I\'m sceptical about self-drive cars"
+title: "Why I'm sceptical about self-drive cars"
 date: 2014-05-06 09:09:49 +0000
 categories: []
 permalink: /why_im_sceptical_about_selfdrive_cars

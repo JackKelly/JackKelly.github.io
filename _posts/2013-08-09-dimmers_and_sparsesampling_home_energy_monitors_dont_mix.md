@@ -1,5 +1,5 @@
 ---
-title: "Dimmers and sparse-sampling home energy monitors don\'t mix"
+title: "Dimmers and sparse-sampling home energy monitors don't mix"
 date: 2013-08-09 15:48:53 +0000
 categories: ["PhD", "CurrentCost"]
 permalink: /dimmers_and_sparsesampling_home_energy_monitors_dont_mix

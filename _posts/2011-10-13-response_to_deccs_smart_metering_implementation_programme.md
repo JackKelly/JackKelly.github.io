@@ -1,5 +1,5 @@
 ---
-title: "Response to DECC\'s Smart Metering Implementation Programme: consultation on draft licence conditions and technical specification"
+title: "Response to DECC's Smart Metering Implementation Programme: consultation on draft licence conditions and technical specification"
 date: 2011-10-13 16:36:42 +0000
 categories: ["smart meters", "DECC", "consultations", "PhD"]
 permalink: /response_to_deccs_smart_metering_implementation_programme

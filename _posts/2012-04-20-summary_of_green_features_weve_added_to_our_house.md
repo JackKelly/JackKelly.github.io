@@ -1,5 +1,5 @@
 ---
-title: "Summary of \"green\" features we\'ve added to our house"
+title: "Summary of \"green\" features we've added to our house"
 date: 2012-04-20 15:21:34 +0000
 categories: ["green diary"]
 permalink: /summary_of_green_features_weve_added_to_our_house

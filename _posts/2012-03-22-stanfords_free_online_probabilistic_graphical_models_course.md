@@ -1,5 +1,5 @@
 ---
-title: "Stanford\'s free online Probabilistic Graphical Models course"
+title: "Stanford's free online Probabilistic Graphical Models course"
 date: 2012-03-22 11:04:26 +0000
 categories: ["PhD", "graphical models", "online courses"]
 permalink: /stanfords_free_online_probabilistic_graphical_models_course

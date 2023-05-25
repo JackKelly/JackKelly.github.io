@@ -1,5 +1,5 @@
 ---
-title: "First attempt to figure out how much power I\'m using"
+title: "First attempt to figure out how much power I'm using"
 date: 2010-05-04 09:50:19 +0000
 categories: ["green diary", "electrical efficiency", "smart meters"]
 permalink: /first_attempt_to_figure_out_how_much_power_im_using

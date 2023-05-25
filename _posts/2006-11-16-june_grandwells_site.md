@@ -1,5 +1,5 @@
 ---
-title: " June Grandwells\' site"
+title: "June Grandwells' site"
 date: 2006-11-16 22:40:40 +0000
 categories: ["filmmaking"]
 permalink: /blog/june_grandwells_site

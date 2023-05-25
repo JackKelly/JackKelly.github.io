@@ -1,5 +1,5 @@
 ---
-title: "UK-DALE paper is now published in NPG\'s Scientific Data\'s journal"
+title: "UK-DALE paper is now published in NPG's Scientific Data's journal"
 date: 2015-03-31 14:57:29 +0000
 categories: ["PhD"]
 permalink: /ukdale_paper_is_now_published_in_npgs_scientific_datas_journal

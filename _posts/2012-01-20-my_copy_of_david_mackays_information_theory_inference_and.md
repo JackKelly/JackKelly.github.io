@@ -1,5 +1,5 @@
 ---
-title: "My copy of David MacKay\'s \"Information Theory, Inference and Learning Algorithms\" arrived"
+title: "My copy of David MacKay's \"Information Theory, Inference and Learning Algorithms\" arrived"
 date: 2012-01-20 13:18:15 +0000
 categories: ["PhD", "information theory"]
 permalink: /my_copy_of_david_mackays_information_theory_inference_and

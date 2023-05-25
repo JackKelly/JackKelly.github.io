@@ -1,5 +1,5 @@
 ---
-title: "A response to commenters on James Delingpole\'s blog"
+title: "A response to commenters on James Delingpole's blog"
 date: 2009-11-30 11:57:00 +0000
 categories: ["climate science"]
 permalink: /a_response_to_commenters_on_james_delingpoles_blog
