@@ -1,7 +1,9 @@
 ---
-title: "Speeding up Zarr"
+title: "Helping to speed up Zarr"
 categories: [open climate fix, machine learning, software engineering]
 ---
+
+TL;DR: To enable many more people to train machine learning models on large, dense, multidimensional datasets (like weather and satellite datasets), I'm planning to dedicate 4 days a week (starting in September) to helping to speed up [Zarr](https://zarr.dev). This blog post describes my motivations for helping to speed up Zarr. And goes into a little detail on _how_ I hope to speed up Zarr.
 
 My ultimate goal remains the same as it's been for the last few years: To help to mitigate climate change by substantially improving energy forecasting. Crucially, the goal is to help as many organisations as possible: To help _other_ people who forecast renewable energy generation (because that's the fastest way to climate impact).
 
