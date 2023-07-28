@@ -46,16 +46,14 @@ My hope is that we can enable many more people to do this sort of work by buildi
 To quote a comment on a draft version of this blog post from [Stephan Hoyer](http://stephanhoyer.com/) (research lead at Google, and the creator of [Xarray](https://github.com/pydata/xarray)):
 
 
-    _"The advantage of a fast Zarr reading is that you can do more preprocessing of data on the fly with minimal performance consequences (e.g., choice of variables and/or time slicing), and you don't necessarily need to store duplicated shuffled copies of your data…_
-
-
-    _There are also two other big advantages of fast random access to Zarr in my opinion:_
-
-
-    _1. Preserving metadata. It's much easier to debug bad interactions between models and data when you have the full metadata to identify where each bit of data came from, rather than just knowing that it's a "random batch."_
-
-
-    _2. Reproducible & deterministic training. For debugging purposes, it's invaluable to have deterministic training scripts. This can get tricky when combined when using cloud infrastructure that may be pre-empted at any time. It's way easier to write pre-emption robust code if you can quickly index into arbitrary locations in the training data, with indices that only depend on the training step number."_
+> "The advantage of a fast Zarr reading is that you can do more preprocessing of data on the fly with minimal performance consequences (e.g., choice of variables and/or time slicing), and you don't necessarily need to store duplicated shuffled copies of your data…
+>
+>
+> There are also two other big advantages of fast random access to Zarr in my opinion:
+>
+>
+> 1. Preserving metadata. It's much easier to debug bad interactions between models and data when you have the full metadata to identify where each bit of data came from, rather than just knowing that it's a "random batch."
+> 2. Reproducible & deterministic training. For debugging purposes, it's invaluable to have deterministic training scripts. This can get tricky when combined when using cloud infrastructure that may be pre-empted at any time. It's way easier to write pre-emption robust code if you can quickly index into arbitrary locations in the training data, with indices that only depend on the training step number."
 
 There's a "democratisation" argument too: A fast Zarr library should make it easier for more people to experiment with training ML models on multidimensional datasets.
 
