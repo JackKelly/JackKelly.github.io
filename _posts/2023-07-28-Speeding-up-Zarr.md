@@ -3,11 +3,11 @@ title: "Helping to speed up Zarr"
 categories: [open climate fix, machine learning, software engineering]
 ---
 
-**TL;DR:** To enable many more people to train machine learning models on large, dense, multidimensional datasets (like weather and satellite datasets), I'm planning to dedicate 4 days a week (starting in September) to helping to speed up [Zarr](https://zarr.dev). This blog post describes my motivations for helping to speed up Zarr. And goes into a little detail on _how_ I hope to speed up Zarr.
+**TL;DR:** To enable many more people to train machine learning models on large, dense, multidimensional datasets (like weather and satellite datasets), I'm planning to dedicate several days a week (starting in September) to helping to speed up [Zarr](https://zarr.dev). This blog post describes my motivations for helping to speed up Zarr. And goes into a little detail on _how_ I hope to speed up Zarr.
 
 My ultimate goal remains the same as it's been for the last few years: To help to mitigate climate change by substantially improving energy forecasting. Crucially, the goal is to help as many organisations as possible: To help _other_ people who forecast renewable energy generation (because that's the fastest way to climate impact).
 
-This is a long-game. We need to lay some important foundations first. The idea is to take a "big swing": and for me to be laser-focused on this work for the next few years. As such, starting in September, my aim is to spend 4 days a week writing code to lay these foundations.
+This is a long-game. We need to lay some important foundations first. The idea is to take a "big swing": and for me to be laser-focused on this work for the next few years. As such, starting in September, my aim is to spend several days a week writing code to lay these foundations.
 
 I'm more excited than ever about applying cutting-edge machine learning (especially [transformers](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))) to energy forecasting. The tools & data exist to do incredible things. I think the results could be really impressive. I want to move beyond ML models which "just" convert numerical weather predictions to power. I want to train ML models which learn atmospheric physics (like [MetNet-3](https://arxiv.org/abs/2306.06079) from Google) from the data and, crucially, learn to use the large amount of real-time data that's available from sensors on the ground (such as solar systems). What does it take to do that? Training on enormous numbers of training examples, as fast as possible! (As well as many other requirements!)
 
@@ -34,7 +34,7 @@ Since OCF's beginning in 2019, we've been using Zarr-Python to store almost all 
 
 While the rest of the OCF team will still be working on the same great ML research which has allowed us to keep pushing the boundaries of forecast performance over the last 18 months, I will be spending most of my time forging ahead with this longer arc problem. 
 
-My plan is to spend 4 days a week for up to a few years laser-focused on implementing this plan, and one day a week working with the OCF team on the current models and plans.
+My plan is to spend several days a week for up to a few years laser-focused on implementing this plan, and one day a week working with the OCF team on the current models and plans.
 
 
 ### Speeding up reading arbitrary slices from multidimensional datasets
@@ -66,7 +66,7 @@ So, my proposal is that I build a new Zarr reader, which is heavily optimised fo
 
 ### Timeline
 
-It'll be a while before anything concrete happens. I need to finish off some stuff at OCF. And then I need to get better at Rust :). And I'm on a family holiday for 3 weeks in Aug. But hopefully, from about September onwards, I'll be able to spend about 4 days a week on Zarr-Rust. Then, after I get a functional MVP of Zarr-Rust running, I'll probably transition to spending about half my time on ML, and half on Zarr-Rust. I honestly have no idea how long this will take, but I'd estimate that it'll take something like a year to get an MVP Zarr-Rust up-and-running. (Please see the section on [When will we know if this approach is worth pursuing?](#mvp) in the Appendix for more discussion of what counts as the MVP).
+It'll be a while before anything concrete happens. I need to finish off some stuff at OCF. And then I need to get better at Rust :). And I'm on a family holiday for 3 weeks in Aug. But hopefully, from about September onwards, I'll be able to spend about several days a week on Zarr-Rust. Then, after I get a functional MVP of Zarr-Rust running, I'll probably transition to spending about half my time on ML, and half on Zarr-Rust. I honestly have no idea how long this will take, but I'd estimate that it'll take something like a year to get an MVP Zarr-Rust up-and-running. (Please see the section on [When will we know if this approach is worth pursuing?](#mvp) in the Appendix for more discussion of what counts as the MVP).
 
 But please shout if you think this is no longer necessary! Or if you have any feedback at all!
 
@@ -98,7 +98,7 @@ That said, there are a few theoretical reasons to believe that it _might_ be pos
 * I'm also interested in doing some processing (downsampling, normalisation, etc.) on each chunk, in parallel, whilst the chunk is still in the CPU's cache after decompression (like [c-blosc2](https://github.com/Blosc/c-blosc2)). But I think [TensorStore already does that](https://github.com/google/tensorstore/blob/0eee84336eb33ada9dc9e546072221a597678380/tensorstore/downsample.h#L48).
 
 
-### Fast, async file IO for huge numbers of files per second is useful beyond Zarr
+### I may write two Rust crates: A general-purpose high-performance async file IO library; and a Zarr front-end.
 
 Zarr isn't the only thing around that could benefit from fast, async file IO for huge numbers of files per second. So I may actually write _two_ Rust crates: a general purpose, high-performance library for async file IO operating concurrently on huge numbers of files (or chunks of files). And a "Zarr front-end".
 
@@ -108,6 +108,7 @@ In a sense, this would be a bit like [fsspec](https://filesystem-spec.readthedoc
 
 And this "high speed IO library" would also be useful as the "backend" for a new high-performance tool for reading huge numbers of GRIB files or EUMETSAT .nat files. So we could convert from GRIB and .nat files to Zarr as efficiently as possible.
 
+Please let me know in the comments if you can think of a good name for this "high speed IO library"!
 
 ### <a name="mvp"></a>When will we know if this approach is worth pursuing?
 
