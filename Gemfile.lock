@@ -13,7 +13,7 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
-    commonmarker (0.23.9)
+    commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
     dnsruby (1.70.0)
       simpleidn (~> 0.2.1)
@@ -247,7 +247,6 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
-    webrick (1.8.1)
 
 PLATFORMS
   x86_64-linux
@@ -255,7 +254,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 228)
   jekyll-feed (~> 0.6)
-  webrick (~> 1.8)
 
 RUBY VERSION
    ruby 3.0.2p107
