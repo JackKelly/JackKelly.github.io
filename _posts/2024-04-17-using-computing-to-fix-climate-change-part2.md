@@ -3,7 +3,7 @@ title: "Using computing to fix climate change, part 2"
 categories: [open climate fix, machine learning, climate change mitigation, software engineering]
 ---
 
-Four years ago, I wrote a blog post on [Using computing to fix climate change](2019-10-03-using-computing-to-fix-climate-change). Since then, I've learnt a lot! So I thought I'd write a follow-on to that blog post. Compared to my old blog post, this new blog post is more philosophical, and less practical. So, if you want practical advice, then please check my previous blog post!
+Four years ago, I wrote a blog post on [Using computing to fix climate change](2019-10-03-using-computing-to-fix-climate-change). Since then, I've learnt a lot! So I thought I'd write a follow-on to that blog post. Compared to my old blog post, this new blog post is more philosophical, and less practical. So, if you want practical advice, then please check my previous blog post.
 
 ## Who is this blog post for?
 
@@ -11,7 +11,7 @@ This blog post is primarily aimed at software engineers who are not currently wo
 
 ## Caveats
 
-Even though I've been working on climate change mitigation for about fifteen years, I'm as confused as ever about how best to maximise impact on the climate! The more I work on climate change mitigation, the more difficult it seems! So I definitely don't claim to be able to give perfect advice about how best to maximise your climate impact!
+Even though I've been working on climate change mitigation for about fifteen years, I'm as confused as ever about how best to maximise impact on the climate :slightly_smiling_face:. The more I work on climate change mitigation, the more difficult it seems! So I definitely don't claim to be able to give perfect advice about how best to maximise your climate impact.
 
 ## In an ideal world, work on stuff that you enjoy, and is useful to the world (independent of the anticipated climate impact)
 
@@ -19,10 +19,10 @@ In general, it's frustratingly hard to predict whether a specific project will r
 
 - Maybe your product simply won't work.
 - Or, maybe your product will work perfectly, but no one uses it (perhaps because it doesn't solve users' most pressing problem, or because it's too expensive). 
-- Or maybe your product works well, _and_ people love using it, but there's some other bottleneck (completely out of your control) that means that your excellent work doesn't impact the climate.
+- Or maybe your product works well, _and_ people love using it, but there's some other bottleneck in the system (completely out of your control) that means that your excellent work doesn't impact the climate.
 - Or, worst, maybe your product works well, and people use it, but it has some unexpected secondary effect which actually _increases_ emissions! (For example, see the [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation))).
 
-Let me tell a sad story: Imagine you dedicate your life to a project that you _thought_ would reduce emissions. The _only_ reason you work on this project is because you desperately want to help reduce emissions, and you expected this project to reduce emissions. But you hate the work. And you don't have any time to see your friends and family. After ten years, you reluctantly come to the conclusion that your work isn't helping the climate, either. That's not the end of the world: you've learnt a lot. But you feel pretty burnt out. And you can't shake the feeling that you've wasted the last decade of your (finite) life.
+Let me tell a sad story: Imagine you dedicate your life to a project that you _thought_ would reduce emissions. The _only_ reason you work on this project is because you desperately want to help reduce emissions. But you hate the work. And you don't have any time to see your friends and family. After ten years, you reluctantly come to the conclusion that your work isn't helping the climate, either. That's not the end of the world: you've learnt a lot. But you feel pretty burnt out. And you can't shake the feeling that you've wasted the last decade of your (finite) life.
 
 If you're at the beginning of your "climate journey" then you probably want to avoid this scenario! So, in an ideal world, I’d recommend working on stuff which has the following properties, _independent of whether you expect that work to impact the climate_:
 
