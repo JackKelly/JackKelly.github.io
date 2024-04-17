@@ -11,7 +11,7 @@ This blog post is primarily aimed at software engineers who are not currently wo
 
 ## Caveats
 
-Even though I've been working on climate change mitigation for about fifteen years, I'm as confused as ever about how best to maximise impact on the climate :slightly_smiling_face:. The more I work on climate change mitigation, the more difficult it seems! So I definitely don't claim to be able to give perfect advice about how best to maximise your climate impact.
+Even though I've been working on climate change mitigation for about fifteen years, I'm as confused as ever about how best to maximise impact on the climate 🙂. The more I work on climate change mitigation, the more difficult it seems! So I definitely don't claim to be able to give perfect advice about how best to maximise your climate impact.
 
 ## In an ideal world, work on stuff that you enjoy, and is useful to the world (independent of the anticipated climate impact)
 
