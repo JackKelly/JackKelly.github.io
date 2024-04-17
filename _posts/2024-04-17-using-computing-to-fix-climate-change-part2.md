@@ -3,34 +3,39 @@ title: "Using computing to fix climate change, part 2"
 categories: [open climate fix, machine learning, climate change mitigation, software engineering]
 ---
 
-Over four years ago, I wrote a blog post on [Using computing to fix climate change](2019-10-03-using-computing-to-fix-climate-change). Since then, I've learnt a lot! So I thought I'd write a follow-on to that blog post. This new blog post might be more philosophical, and less practical. So, if you want practical advice, then please check my previous blog post!
+Four years ago, I wrote a blog post on [Using computing to fix climate change](2019-10-03-using-computing-to-fix-climate-change). Since then, I've learnt a lot! So I thought I'd write a follow-on to that blog post. Compared to my old blog post, this new blog post is more philosophical, and less practical. So, if you want practical advice, then please check my previous blog post!
 
-## Who is this blog for?
+## Who is this blog post for?
 
-This blog is primarily aimed at software engineers who are not currently working on climate change mitigation, but would like to move their career towards actively working on climate mitigation. 
+This blog post is primarily aimed at software engineers who are not currently working on climate change mitigation, but would like to move their career towards actively working on climate mitigation. 
 
 ## Caveats
 
-Even though I’ve been working on climate change mitigation for about fifteen years, I’m as confused as ever about how best to maximise your impact on the climate! The more I work on climate change mitigation, the more difficult it seems! So I definitely don’t claim to be able to give perfect advice about how best to maximise your climate impact!
+Even though I've been working on climate change mitigation for about fifteen years, I'm as confused as ever about how best to maximise impact on the climate! The more I work on climate change mitigation, the more difficult it seems! So I definitely don't claim to be able to give perfect advice about how best to maximise your climate impact!
 
-## Ideally: work on stuff that you enjoy, and is useful to the world (independent of the anticipated climate impact)
+## In an ideal world, work on stuff that you enjoy, and is useful to the world (independent of the anticipated climate impact)
 
-In general, it's frustratingly hard to predict whether a specific project will reduce emissions of greenhouse gases. Maybe your product simply won't work. Or, maybe your product will work perfectly, but no one uses it (perhaps because it doesn't solve users' most pressing problem, or because it's too expensive). Or maybe your product works well, _and_ people love using it, but there's some other bottleneck (completely out of your control) that means that your excellent work doesn't impact the climate. Or, worst, maybe your product works well, and people use it, but it has some unexpected secondary effect which actually _increases_ emissions! (For example, see the [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation))).
+In general, it's frustratingly hard to predict whether a specific project will reduce emissions at scale:
 
-Let me tell a sad story: Imagine you dedicate your life to a project that you _thought_ would reduce emissions. The _only_ reason you work on this project is because you desperately want to help reduce emissions, and you expected this project to reduce emissions. But you hate the work. And you don't have any time to see your friends and family. After ten years, you reluctantly come to the conclusion that your work isn't helping the climate, either. That's not the end of the world: you've learnt a lot. But you feel pretty burnt out.
+- Maybe your product simply won't work.
+- Or, maybe your product will work perfectly, but no one uses it (perhaps because it doesn't solve users' most pressing problem, or because it's too expensive). 
+- Or maybe your product works well, _and_ people love using it, but there's some other bottleneck (completely out of your control) that means that your excellent work doesn't impact the climate.
+- Or, worst, maybe your product works well, and people use it, but it has some unexpected secondary effect which actually _increases_ emissions! (For example, see the [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation))).
+
+Let me tell a sad story: Imagine you dedicate your life to a project that you _thought_ would reduce emissions. The _only_ reason you work on this project is because you desperately want to help reduce emissions, and you expected this project to reduce emissions. But you hate the work. And you don't have any time to see your friends and family. After ten years, you reluctantly come to the conclusion that your work isn't helping the climate, either. That's not the end of the world: you've learnt a lot. But you feel pretty burnt out. And you can't shake the feeling that you've wasted the last decade of your (finite) life.
 
 If you're at the beginning of your "climate journey" then you probably want to avoid this scenario! So, in an ideal world, I’d recommend working on stuff which has the following properties, _independent of whether you expect that work to impact the climate_:
 
 Try to work on stuff that:
 
-1. You _enjoy_: Specifically, stuff that you find intellectually stimulating, satisfying, and which has a friendly community, and pays you enough! (Of course, you can't expect to enjoy every minute of the job: all jobs will have difficult and/or frustrating periods.)
+1. You _enjoy_: Specifically, stuff that you find intellectually stimulating, satisfying, and which has a friendly community, and pays you enough! (Of course, you can't expect to enjoy every minute of the job: all jobs have difficult and/or frustrating periods.)
 2. Is useful to the world, even if it fails to help fix climate change.
 
-## Building things is relatively easy. The hard part is figuring out which problem to work on!
+## Building things is relatively easy. It's much harder to figure out which problem to work on!
 
-In many ways, it's never been easier to lash together a technical demo that appears to prove some principle. As technologists, it's all too easy to get over-excited about the _tech_, and to loose sight of what users need! (I've certainly done this in the past!)
+In many ways, it's never been easier to lash together a technical demo that appears to prove some principle. And, as technologists, it's all too easy to get over-excited about the _tech_, and to loose sight of what users need! (I've certainly done this!)
 
-The hard part is figuring out which problem to work on!
+One of the hardest problems is figuring out which problem to work on!
 
 This sounds like I'm about to sing the praises of "agile" software development. But I'm actually pretty sceptical of agile software development (but this blog post isn't the right place for that particular rant!)
 
@@ -40,8 +45,8 @@ The perfect scenario, in my opinion, is to get extensive, _first-hand experience
 
 So, to return(!) to concrete advice:
 
-1. I _highly_ recommend spending as much time as you can "at the coal face". For example, if you want to help make the electricity grid more efficient, then go and spend a year or two working at (or consulting for) an electricity company. You'll gain invaluable experience of the _real_ problems that the grid faces, and you'll make a tonne of contacts. And, hopefully, you'll find yourself thinking "gosh, this process is insanely inefficient... Life would be so much easier if I had _x_". And _then_ you can go and build _x_!
-2. Failing that, talk to as many people in your target industry as possible. Email folks. Go to as many in-person conferences and workshops as possible.
+1. I _highly_ recommend spending as much time as you can "at the coal face". For example, if you want to help make the electricity grid more efficient, then spend a year or more working at (or consulting for) an electricity company. You'll gain invaluable experience of the _real_ problems that the grid faces, and you'll make a tonne of contacts. And, hopefully, you'll find yourself thinking "gosh, this process is insanely inefficient... Life would be so much easier if I had _x_". And _then_ you can go and build _x_!
+2. Talk to as many people in your target industry as possible. Email folks. Go to as many in-person conferences and workshops as possible.
 
 ## Wait. Isn't generative AI going to make programmers obsolete in six months?
 
