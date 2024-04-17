@@ -33,15 +33,15 @@ Try to work on stuff that:
 
 ## Building things is relatively easy. It's much harder to figure out which problem to work on!
 
-In many ways, it's never been easier to lash together a technical demo that appears to prove some principle. And, as technologists, it's all too easy to get over-excited about the _tech_, and to loose sight of what users need! (I've certainly done this!)
+In many ways, it's never been easier to lash together a technical demo that appears to prove some principle. And, as technologists, it's all too easy to get over-excited about the _tech_, and to loose sight of what users need! (I've certainly done this.)
 
-One of the hardest problems is figuring out which problem to work on!
+One of the hardest problems is figuring out which problem to work on.
 
-This sounds like I'm about to sing the praises of "agile" software development. But I'm actually pretty sceptical of agile software development (but this blog post isn't the right place for that particular rant!)
+This sounds like I'm about to sing the praises of "agile" software development. But I'm actually pretty sceptical of agile software development (but this blog post isn't the place for that particular rant!)
 
 The perfect scenario, in my opinion, is to get extensive, _first-hand experience_ of a problem before you try to solve that problem. Then _you're_ the first user _and_ the developer.
 
-(To get very pretentious and controversial for a second: In some ways I think about software engineering in the same way that I think about art. My hypothesis is that the best art is produced by people who create stuff that they're passionate about, and which scratches _their own_ creative itch. They pour their soul into the work. But they don't over-obsess about whether _other_ people will love the work (because we can never know other peoples' minds as well as we know our own). Good artists have a strong vision, and they're brutally honest with themselves, and they have the time and energy to repeatedly re-do work that they're not happy with. If you're self-aware, then you'll get a much stronger "signal" from your own critical assessment of your work than you'll ever get from other people. "Successful" artists are ones whose tastes happen - almost by chance - to align with other peoples' tastes. In contrast, a great way to make mediocre art is to do something that doesn't inspire you, but instead you're just doing because you _think_ other people will like. I think one of the great tragedies of modern software engineering is that we've forgotten that it's a deeply creative endeavour, and we've tried - mistakenly - to turn it into a mechanical process.)
+(To get very pretentious and controversial for a second: In some ways I think about software engineering in the same way that I think about art, even though I know almost nothing about art. My hypothesis is that the best art is produced by people who create stuff that they're passionate about, and which scratches _their own_ creative itch. They pour their soul into the work. But they don't over-obsess about whether _other_ people will love the work (because we can never know other peoples' minds as well as we know our own). My hypothesis is that good artists have a strong vision, and they're brutally honest with themselves, and they have the time and energy to repeatedly re-do work that they're not happy with. If you're self-aware, then you'll get a much stronger "signal" from your own critical assessment of your work than you'll ever get from other people. "Successful" artists are ones whose tastes happen - almost by chance - to align with other peoples' tastes. In contrast, a great way to make mediocre art is to do something that doesn't inspire you, but instead you're just doing because you _think_ other people will like. I think one of the great tragedies of modern software engineering is that we've forgotten that it's a deeply creative endeavour, and we've tried - mistakenly - to turn it into a mechanical process.)
 
 So, to return(!) to concrete advice:
 
@@ -54,7 +54,7 @@ No, programmers won't be obsolete in six months :)
 
 Beyond that, I can't predict what will happen with any confidence!
 
-My hunch is that generative AI will increasingly be used for "junior" coding tasks (e.g. adding a simple feature to an existing codebase). My hunch (or naive hope?!) is that there will continue to be, for at least the next few years, the need for people who excel at programming, and/or people who can _design_ large systems (taking into consideration feedback from users, and considerations about how best to maintain the software for years to come, etc.). (I really like TJ DeVries' recent YouTube video "[Is it still worth it to learn to code? (I think so)](https://www.youtube.com/watch?v=JMK_30jeGww)").
+My hunch is that generative AI will increasingly be used for "junior" coding tasks (e.g. adding a simple feature to an existing codebase). My hunch (or naive hope?!) is that there will continue to be, for at least the next few years, the need for people who have a "deep" knowledge of programming, and/or people who can _design_ large systems (taking into consideration feedback from users, and considerations about how best to maintain the software for years to come, etc.). (I really like TJ DeVries' recent YouTube video "[Is it still worth it to learn to code? (I think so)](https://www.youtube.com/watch?v=JMK_30jeGww)").
 
 If you're excited about diving deep into coding, and you love understanding "how things work", and you want to build stuff that's never been built before, then I'm fairly confident that it's still sensible to pursue a career in programming. In fact, in some ways it's never been a _better_ time to be a programmer, because generative AI helps reduce some of the tedium of coding (writing boiler-plate!)!
 
@@ -64,11 +64,11 @@ If you want to be an engineer (but not necessarily a _software_ engineer) then i
 
 ## Avoiding the hype
 
-In some ways, it might actually be _harder_ today to find jobs that will benefit the climate, compared to a few years ago. That's because a _lot_ of jobs and companies _claim_ to benefit the climate. But a lot of this is just noise. It turns out that the main trick to attracting funding is to tell a good _story_, and to hype up your company as much as possible. Unfortunately, the climate system doesn't work like most funders. The climate system doesn't care about how many YouTube reaction videos your product launch gets, or how bold your claims in your pitch-deck.
+In some ways, it might actually be _harder_ today to find jobs that will benefit the climate, compared to a few years ago. That's because a _lot_ of jobs and companies _claim_ to benefit the climate. But a lot of these claims are false. It turns out that a good trick to attract funding is to tell a good _story_, and to hype up your company as much as possible. Unfortunately, the climate system doesn't care about how many YouTube reaction videos your product launch gets, or how bold your claims in your pitch-deck.
 
 I'm honestly not sure how best to avoid this trap.
 
-Some red flags mights be things like the boss of a "climate company" driving a fuel-guzzling sports car. Or the company regularly flying the team to events, even though it'd only take a few hours to do the same journey by train.
+Some red flags mights be things like the boss of a "climate company" driving a fuel-guzzling sports car. Or the company regularly flying the team to events, even though it'd only take a few hours to travel the same distance by train. (These are quite "shallow" signals. I guess the point is that you're trying to find people who sincerely want to fix climate change. And avoid people who are cynically trying to "make a quick buck" out of the present-day concern about climate change. To be clear: I don't object to people making money from climate change mitigation. But I do object to people who lie about their motivations.)
 
 ## The importance of this work
 
