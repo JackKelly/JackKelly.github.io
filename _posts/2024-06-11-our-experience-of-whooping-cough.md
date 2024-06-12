@@ -137,9 +137,9 @@ Of course, I have the benefit of hindsight. Of course, lots of people who go to 
 
 Craig Venter, one of the pioneers of DNA sequencing, has spent a while sailing the world's oceans, sampling sea water, and [sequencing the DNA of every organism in that sample of sea water](https://www.jcvi.org/research/gos).
 
-Please can someone invent a cheap way to do that in every GP office in the world? So you go in to see your doctor, complaining of a slight cough, and they take a blood sample and a swab from your nose, and pop down the hall. Five minutes later they return with an exhaustive list of _every_ organism found in your blood and snot. All the viruses, bacteria, and fungi. And their population counts.
+Please can someone invent a cheap way to do that in every GP office in the world? (But for spit and blood. Not sea water!) So you go in to see your doctor, complaining of a slight cough, and they take a blood sample and a swab from your nose, and pop down the hall. Five minutes later they return with an exhaustive list of _every_ organism found in your blood and snot. All the viruses (RNA viruses and DNA viruses), bacteria, and fungi. And their population counts.
 
-That would be super useful for the patient. "Oh, you have whooping cough. Let's start you on azithromycin right now!". But it'd be useful for the whole community, because we could track the evolution and spread of disease through populations.
+That would be super useful for the patient. "Oh, you have whooping cough. Let's start you on azithromycin right now!". _And_ it'd be useful for the whole community, because we could track the evolution and spread of disease through populations.
 
 Go on, inventers. You know you want a new project, right?!
 
