@@ -73,7 +73,7 @@ To be honest, we don't know for _sure_ that _I_ had whooping cough (because I di
 
 ## How our experience of whooping cough differs from the "textbook"
 
-The [NHS web page on whooping cough](https://www.nhs.uk/conditions/whooping-cough/) says that "_If you've had whooping cough for more than 3 weeks, you're no longer contagious and do not need antibiotics._". The experience of my daughter and I suggests that both of these statements are wrong.
+The [NHS web page on whooping cough](https://www.nhs.uk/conditions/whooping-cough/) says "_If you've had whooping cough for more than 3 weeks, you're no longer contagious and do not need antibiotics._". The experience of my daughter and I suggests that both of these statements are wrong.
 
 After 8 weeks of coughing, my daughter was getting _worse_, and still had an active bacterial infection. Then she was given azithromycin. And the bulk of her symptoms went away within a few days. Azithromycin helped her after 8 weeks.
 
