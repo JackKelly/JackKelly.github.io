@@ -19,7 +19,7 @@ For more info, see [the wikipedia page on whooping cough](https://en.wikipedia.o
 
 ### Why does Bordetella pertussis make you cough?
 
-Whooping cough usually has three distinct phases: 1) the catarrhal phase (where the symptoms are very similar to having a "normal" cough), 2) the paroxysmal phase (where you get intense coughing fits), and 3) the convalescent phase (where you have cleared the bacteria from your body, but your cough lingers for weeks or months.
+Whooping cough usually has three distinct phases: 1) the catarrhal phase (where the symptoms are very similar to having a "normal" cough), 2) the paroxysmal phase (where you get intense coughing fits), and 3) the convalescent phase (where you have cleared the bacteria from your body, but your cough lingers for weeks or months).
 
 [Here's an interesting 2022 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9239215/) discussing some evidence that sheds light on why the bacteria causes a cough. (And, interestingly, this paper also makes the point that one reason that we don't know much about coughs is that, until very recently, we thought there were no good animal models for coughs. In particular, it was thought that mice don't cough. But, recently, it's been found that mice _do_ cough, just very quietly!)
 
@@ -31,7 +31,7 @@ In short: This has been the worst "cold" I've ever experienced. This has been _w
 
 My 12 yearold daughter was the first in our family to start coughing. I started coughing about two weeks after my daughter.
 
-For my daughter and I, our symptoms started as a fairly mild cough, with no other symptoms (the "catarrhal" phase). But, about a week after starting coughing, we both started having severe coughing fits several times per day (the "paroxysmal" phase), and generally feeling really ill. These fits are no joke. These coughing fits completely take over your body for about a minute. It can feel impossible to breath. The only thing that stops you panicking that you'll never breath again is knowing that you've had many of these fits before, and they eventually subside. You wake several times a night, already in a coughing fit, fighting for breath. When fighting for breath between coughs, both my daughter and I made "whooping" sounds.
+For my daughter and I, our symptoms started as a fairly mild cough, with no other symptoms (the "catarrhal" phase). But, about a week after starting coughing, we both started having severe coughing fits several times per day (the "paroxysmal" phase), and generally feeling really ill. These fits are no joke. These coughing fits completely take over your body for about a minute. It can feel impossible to breath. The only thing that stops you panicking that you'll never breath again is knowing that you've had many of these fits before, and they eventually subside. You wake several times a night, already in a coughing fit, fighting for breath. When fighting for breath between coughs, both my daughter and I made "whooping" sounds. We both had low blood oxygenation saturation (about 94%).
 
 There were some differences between my daughter's symptoms and my symptoms. My daughter's coughing fits would make her vomit about once a day. So much so that she lost 3 kg of weight over the 8 week course of her cough. My daughter also had a temperature, which would come and go. At worst, her temperature got to about 38.4 ℃.
 
