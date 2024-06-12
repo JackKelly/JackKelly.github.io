@@ -23,7 +23,7 @@ Whooping cough usually has three distinct phases: 1) the catarrhal phase (where 
 
 [Here's an interesting 2022 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9239215/) discussing some evidence that sheds light on why the bacteria causes a cough. (And, interestingly, this paper also makes the point that one reason that we don't know much about coughs is that, until very recently, we thought there were no good animal models for coughs. In particular, it was thought that mice don't cough. But, recently, it's been found that mice _do_ cough, just very quietly!)
 
-The short answer is that evolution is very clever: The Bordetella perussis bacteria excretes toxins into your lungs which sensitise your lungs to coughing (so you start coughing more frequently), and also disrupt the signalling pathway that would usually _stop_ a cough (so you get coughing _fits_). Supposedly, this helps the bacteria to spread to other hosts! And, supposedly, the effects of these toxins linger after the bacteria have gone.
+To get back to the original question: _why_ does pertussis make you cough? The short answer is: evolution! The Bordetella perussis bacteria excretes toxins into your lungs which sensitise your lungs to coughing (so you start coughing more frequently), and also disrupt the signalling pathway that would usually _stop_ a cough (so you get coughing _fits_). Supposedly, this helps the bacteria to spread to other hosts! And, supposedly, the effects of these toxins linger after the bacteria have gone.
 
 ## What was whooping cough like for our family?
 
@@ -115,7 +115,31 @@ My concern is that there's a feedback loop here: Whooping cough is perceived as 
 
 ## Why are cases of whooping cough increasing?
 
-Anti-vaxxers carry a lot of the responsibility. See: https://www.bbc.co.uk/news/health-68990222
+Anti-vaxxers carry a lot of the responsibility. See: BBC News, 10th May 2024: [Whooping cough: Vaccine expert 'very worried' by whooping cough deaths](https://www.bbc.co.uk/news/health-68990222).
 
 (It makes me feel physically sick that misinformation in the virtual world has caused real, material harm to my family, and to my friends).
+
+## The false economy of not testing coughs
+
+A central question is: _Why_ don't UK GPs routinely run lab tests on serious coughs? (I get the sense that some other countries _do_ routinely run lab tests for coughs).
+
+I fear the answer is that someone ran an overly simplistic financial model, and decided that it's just "too expensive". (Although I have to be honest that I have absolutely _no_ idea why the NHS don't routinely test coughs!)
+
+But, surely the calculation should be "how do we reduce costs over the medium term", not "how do we minimise costs _today_ (even if that increases costs tomorrow)".
+
+Consider my family's experience. We've probably cost the NHS quite a lot of money over the last 8 weeks. Between us, I think we've seen a doctor about 12 times. My daughter has had 5 courses of antibiotics, paid for by the NHS. The majority of those antibiotics did nothing to reduce symptoms, and just added to the problem of antibiotic resistance. We've had 3 chest x-rays (which are done at our local hospital, which has plenty of other work to be doing!). I've had time off work. My daughter has had time off school. I'd be amazed if we haven't passed whooping cough onto other people. Those people, in turn, will cost the NHS a bunch of money.
+
+Consider an alternative universe where my daughter was tested the first time we saw a doctor (about 10 days into her cough). She would've been put on a macrolide antibiotic straight away. Perhaps she'd only need one course of antibiotics. Maybe she wouldn't have needed any chest x-rays. She probably wouldn't have needed such extensive blood tests as we ended up needing, because we probably wouldn't have been worried about TB or sepsis. Maybe I, my son, and my wife wouldn't have gotten sick at all (so we wouldn't have cost the NHS anything). If we did get ill, we'd suspect whooping cough, and go straight onto a microlide antibiotic. _Surely_ that's a lot cheaper for the NHS? _And_ reduces excessive use of antibiotics. _And_ reduces pain.
+
+Of course, I have the benefit of hindsight. Of course, lots of people who go to the GP with a cough probably _do_ "just" have a viral cough, and there's not much to be done. But I'd really love to see the financial modelling that drove the decision _not_ to test coughs.
+
+## Please can someone invent a way to sequence all the organisms in your spit or blood, very cheaply? Pretty please?!
+
+Craig Venter, one of the pioneers of DNA sequencing, has spent a while sailing the world's oceans, sampling sea water, and [sequencing the DNA of every organism in that sample of sea water](https://www.jcvi.org/research/gos).
+
+Please can someone invent a cheap way to do that in every GP office in the world? So you go in to see your doctor, complaining of a slight cough, and they take a blood sample and a swab from your nose, and pop down the hall. Five minutes later they return with an exhaustive list of _every_ organism found in your blood and snot. All the viruses, bacteria, and fungi. And their population counts.
+
+That would be super useful for the patient. "Oh, you have whooping cough. Let's start you on azithromycin right now!". But it'd be useful for the whole community, because we could track the evolution and spread of disease through populations.
+
+Go on, inventers. You know you want a new project, right?!
 
