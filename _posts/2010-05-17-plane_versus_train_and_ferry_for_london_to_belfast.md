@@ -53,7 +53,7 @@ CO](http://en.wikipedia.org/wiki/Ferry#Sustainability)~[2](http://en.wikipedia.o
 figures from
 WikiPedia](http://en.wikipedia.org/wiki/Ferry#Sustainability))
 
-<iframe width="700" height="300" frameborder="0" src="http://spreadsheets.google.com/pub?key=tyW7z8F1hQxQHxqOZVpupzg&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true"></iframe>
+![CO2 emissions of return trip London to Belfast](files/London_to_Belfast_CO2_emissions_table.png)
 
 All the trains were diesel electric averaging about 75% occupancy, the
 plane was about 90% full. Sources: [plane &
