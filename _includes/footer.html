@@ -26,6 +26,12 @@
           </li>
           {% endif %}
 
+          {% if site.bluesky_username %}
+          <li>
+            {% include icon-bluesky.html username=site.bluesky_username %}
+          </li>
+          {% endif %}
+
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
@@ -41,11 +47,6 @@
           <li>
             {% include icon-flickr.html link="https://www.flickr.com/photos/37816297@N06/albums" %}
           </li>
-          
-          <li>
-            <a rel="me" href="https://mastodon.energy/@jack_kelly">Mastodon</a>
-          </li>
-          
         </ul>
       </div>
 

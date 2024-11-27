@@ -18,7 +18,8 @@ email: jack@jack-kelly.com
 description: "I try to mitigate climate change using computer science.  I co-founded [Open Climate Fix](http://openclimatefix.org), a non-profit research lab focused on reducing greenhouse gas emissions.  Previously, I was a Research Engineer at [DeepMind](https://deepmind.com), where I used machine learning to predict wind power."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jack-kelly.com"
-twitter_username: jack_kelly
+# twitter_username: jack_kelly
+bluesky_username: jack-kelly.com
 github_username:  JackKelly
 linkedin_username: jackkelly0
 
