@@ -45,9 +45,10 @@ class="flickr-image">[![\_DSC0240](https://farm5.staticflickr.com/4096/479003076
  
 
 What exactly did I hope to achieve by insulating?  The aim was to reduce
-the rate at which the external walls lose heat by a factor of 7 (9"
+the rate at which the external walls lose heat by a factor of 7 (to explain where that factor of 7
+comes from: 9"
 solid brick walls have an uninsulated [U-value](https://en.wikipedia.org/wiki/R-value_(insulation)#U-factor/U-value) of 2.1 watts per square
-meter per Kelvin (W/(m²⋅K)); 9" brick plus 70mm of polyurethane foam insulation
+meter per Kelvin (W/(m²⋅K), whilst 9" brick plus 70mm of polyurethane foam insulation
 has a U-value of 0.3 W/(m²⋅K)) and to reduce the rate at which the
 floor loses heat by a similar factor.  Achieving a wall U-value of
 0.3 W/(m²⋅K) puts us firmly in the territory of the Energy Saving
