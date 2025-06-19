@@ -46,14 +46,14 @@ class="flickr-image">[![\_DSC0240](https://farm5.staticflickr.com/4096/479003076
 
 What exactly did I hope to achieve by insulating?  The aim was to reduce
 the rate at which the external walls lose heat by a factor of 7 (9"
-solid brick walls have an uninsulated U-value of 2.1 Watts per square
-meter per Kelvin; 9" brick plus 70mm of polyurethane foam insulation
-has a u-value of 0.3 W.m^-2^.K^-1^) and to reduce the rate at which the
+solid brick walls have an uninsulated [U-value](https://en.wikipedia.org/wiki/R-value_(insulation)#U-factor/U-value) of 2.1 watts per square
+meter per Kelvin (W/(m²⋅K)); 9" brick plus 70mm of polyurethane foam insulation
+has a U-value of 0.3 W/(m²⋅K)) and to reduce the rate at which the
 floor loses heat by a similar factor.  Achieving a wall U-value of
-0.3 W.m^-2^.K^-1^ puts us firmly in the territory of the Energy Saving
+0.3 W/(m²⋅K) puts us firmly in the territory of the Energy Saving
 Trust's "recommended specs" and means that we exceed the building regs
 for both 2006 and 2010 (but, to put this in perspective, a Passivhaus /
-Code 6 would have wall u-values around 0.15 W.m^-2^.K^-1^)
+Code 6 would have wall U-values around 0.15 W/(m²⋅K))
 
 Starting the project: pulling up the floor boards
 -------------------------------------------------
@@ -254,7 +254,7 @@ need for a given free span).   We used 200x50mm C16 joists and we
 ensured that there was at least a 150mm gap between the bottom of the
 joists and the ground.  We could have used shallower joists if we'd
 installed more sleeper walls but that probably would have been more work
-and would have required more concrete (and [around 1kg of CO2 is
+and would have required more concrete (and [around 1kg of CO₂ is
 released during the production of each kg of
 cement](http://en.wikipedia.org/wiki/Portland_cement#Environmental_effects)).
 
@@ -316,7 +316,7 @@ The plan for insulating the wall was to:
     brick into the wood.
 4.  Put 50mm Celotex between the studs and a further 30mm over the studs
     to limit cold bridging. Total insulation thickness = 80mm and a
-    u-value of 0.29 W.m^-2^.K^-1^.  Fill gaps with expandable foam.
+    U-value of 0.29 W/(m²⋅K).  Fill gaps with expandable foam.
      Tape over the joints.
 5.  Put a vapour control layer over the insulation
 6.  Pay attention to where the VCL meets the corners, ceiling and floor.
@@ -819,7 +819,7 @@ Because:
     living room floor and I'm reluctant to bury those services under
     concrete
 -   We'd use multiple tonnes of concrete (which isn't great for our
-    CO2 footprint)
+    CO₂ footprint)
 
 None of these issues are impossible to overcome so we could have
 installed a solid floor if we really, really wanted to.  But, all things
@@ -832,11 +832,11 @@ I thought you were trying to be environmentally friendly? Polyisocyanurate (PIR
 
 My general attitude to fossil oil is that it isn't intrinsically "bad".
  The main reason why oil is considered environmentally damaging is
-because it produces CO2 when burnt, and large quantities of CO2 change
+because it produces CO₂ when burnt, and large quantities of CO₂ change
 our environment in ways in which humans and many other species are not
 optimised for.   But fossil oil can be used as a chemical feedstock for
 a vast variety of products from pharmaceuticals to plastics without
-producing CO2.  Yes, you certainly can point to countries where oil
+producing CO₂.  Yes, you certainly can point to countries where oil
 production has  led to serious geopolitical problems and it's also true
 that oil drilling is one of the deadliest jobs in the western world;
 although it may be more accurate to say that mining of *any* mineral
@@ -920,7 +920,7 @@ Because:
 -   I'm not entirely happy with the idea that the moisture from the
     (quite seriously) damp wall will be allowed into the living space.
      We may have to run a dehumidifyer which guzzles power.
--   I'm sceptical of claims that the wood fibre maintains its u-value
+-   I'm sceptical of claims that the wood fibre maintains its U-value
     even when damp (although I have no empirical evidence to
     substantiate this scepticism)
 -   We (and every subsequent owner of the house) would be restricted to
