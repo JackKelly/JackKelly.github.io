@@ -11,18 +11,23 @@ for filename in os.listdir(asset_dir):
         os.rename(os.path.join(asset_dir, filename), os.path.join(asset_dir, new_name))
         print(f"Renamed: {filename} -> {new_name}")
 
-# 2. Update the HTML file to point to the new names
-with open("index.html", "r") as f:
-    content = f.readlines()
-
-# Replace "_assets/" with "assets/" or just "_filename" with "filename"
-# This regex looks for strings starting with _ in quotes
-fixed_content = [
-    line.replace("assets/__", "assets/").replace("assets/_", "assets/")
-    for line in content
+files_to_patch = ["index.html"] + [
+    os.path.join(asset_dir, f) for f in os.listdir(asset_dir) if f.endswith(".js")
 ]
 
-with open("index.html", "w") as f:
-    f.writelines(fixed_content)
+for file_path in files_to_patch:
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-print("HTML updated!")
+    # Replace "_assets/" with "assets/" or just "_filename" with "filename"
+    # This regex looks for strings starting with _ in quotes
+    fixed_content = content.replace("assets/__", "assets/")
+    fixed_content = fixed_content.replace("assets/_", "assets/")
+    fixed_content = fixed_content.replace("./__", "./")
+    fixed_content = fixed_content.replace("./_", "./")
+
+    if fixed_content != content:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(fixed_content)
+
+        print("Replaced underscores in", file_path)
