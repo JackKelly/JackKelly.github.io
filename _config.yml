@@ -35,6 +35,8 @@ exclude:
   - Gemfile.lock
 #  - "_posts/200*"
 #  - "_posts/201[0-6]*"
+include:
+  - "solar/assets"
 
 timezone: Europe/London
 minima:
