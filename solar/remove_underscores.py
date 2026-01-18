@@ -4,7 +4,10 @@ import os
 asset_dir = "assets"
 for filename in os.listdir(asset_dir):
     if filename.startswith("_"):
-        new_name = filename[1:]  # Remove the leading underscore
+        if filename[2] == "_":  # If filename starts with two underscores.
+            new_name = filename[2:]
+        else:
+            new_name = filename[1:]  # Remove the leading underscore
         os.rename(os.path.join(asset_dir, filename), os.path.join(asset_dir, new_name))
         print(f"Renamed: {filename} -> {new_name}")
 
@@ -14,7 +17,10 @@ with open("index.html", "r") as f:
 
 # Replace "_assets/" with "assets/" or just "_filename" with "filename"
 # This regex looks for strings starting with _ in quotes
-fixed_content = [line.replace("assets/_", "assets/") for line in content]
+fixed_content = [
+    line.replace("assets/__", "assets/").replace("assets/_", "assets/")
+    for line in content
+]
 
 with open("index.html", "w") as f:
     f.writelines(fixed_content)
