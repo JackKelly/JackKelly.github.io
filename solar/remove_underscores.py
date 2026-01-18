@@ -4,7 +4,7 @@ import os
 asset_dir = "assets"
 for filename in os.listdir(asset_dir):
     if filename.startswith("_"):
-        if filename[2] == "_":  # If filename starts with two underscores.
+        if filename.startswith("__"):
             new_name = filename[2:]
         else:
             new_name = filename[1:]  # Remove the leading underscore
