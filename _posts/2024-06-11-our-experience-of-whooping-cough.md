@@ -29,7 +29,7 @@ To get back to the original question: _why_ does pertussis make you cough? The s
 
 In short: This has been the worst "cold" I've ever experienced. This has been _way_ worse for our family than covid. (We've had covid at least twice; and we've had all our covid jabs. And I thought covid was bad!). (Although, of course, I appreciate that covid can be far worse for other people!)
 
-My 12 yearold daughter was the first in our family to start coughing. I started coughing about two weeks after my daughter.
+My 12 year old daughter was the first in our family to start coughing. I started coughing about two weeks after my daughter.
 
 For my daughter and I, our symptoms started as a fairly mild cough, with no other symptoms (the "catarrhal" phase). But, about a week after starting coughing, we both started having severe coughing fits several times per day (the "paroxysmal" phase), and generally feeling really ill. These fits are no joke. These coughing fits completely take over your body for about a minute. It can feel impossible to breath. The only thing that stops you panicking that you'll never breath again is knowing that you've had many of these fits before, and they eventually subside. You wake several times a night, already in a coughing fit, fighting for breath. When fighting for breath between coughs, both my daughter and I made "whooping" sounds. We both had low blood oxygenation saturation (about 94%). Even once the fit subsides, my daughter and I both still felt light-headed and found it hard to breath for another minute or so after the cough, as if the cough had tightened up our lungs. We both had very runny noses for a few weeks.
 
@@ -50,7 +50,7 @@ In total, my daughter was ill for over 8 weeks. I was ill for about 4 weeks.
 
 My kids were both vaccinated against whooping cough when they were younger. But immunity wanes after several years.
 
-My 10 yearold son and my wife both also caught coughs (a few weeks after my cough started). My son had the least symptoms (which I'd guess is because he's most recently had his whooping cough vaccine). My son just had a slightly annoying cough for about 10 days. No other symptoms. My wife had an annoying cough for a few weeks, with no other symptoms. Neither my son nor my wife got full-blown coughing fits. Neither my wife nor my son needed to see a doctor (so they didn't get any meds).
+My 10 year old son and my wife both also caught coughs (a few weeks after my cough started). My son had the least symptoms (which I'd guess is because he's most recently had his whooping cough vaccine). My son just had a slightly annoying cough for about 10 days. No other symptoms. My wife had an annoying cough for a few weeks, with no other symptoms. Neither my son nor my wife got full-blown coughing fits. Neither my wife nor my son needed to see a doctor (so they didn't get any meds).
 
 ## What did the doctor say? Which medications did we get?
 
@@ -82,7 +82,7 @@ I had a horrible cough for 4 weeks. I still felt really ill after 4 weeks (which
 
 Perhaps this is just coincidence. Perhaps we were already getting better (without the azithromycin). And, of course, this is all anecdotal, and not done under "lab conditions".
 
-The "textbook" says that serum (antibody) testing isn't appropriate for ages 17 or younger. But a whooping cough serum test came back strongly positive for my 12 yearold daughter.
+The "textbook" says that serum (antibody) testing isn't appropriate for ages 17 or younger. But a whooping cough serum test came back strongly positive for my 12 year old daughter.
 
 ## Advice for people who think they may have whooping cough
 
@@ -142,5 +142,5 @@ Please can someone invent a cheap way to do that in every GP office in the world
 
 That would be super useful for the patient. "Oh, you have whooping cough. Let's start you on azithromycin right now!". _And_ it'd be useful for the whole community, because we could track the evolution and spread of disease through populations.
 
-Go on, inventers. You know you want a new project, right?!
+Go on, inventors. You know you want a new project, right?!
 
