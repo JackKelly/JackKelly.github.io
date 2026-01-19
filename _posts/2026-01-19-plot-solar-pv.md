@@ -5,8 +5,8 @@ diary, solar]
 ---
 
 We had 10 solar PV panels installed on our roof in south-east London back in 2022. I've finally
-gotten round to writing code to grab live data from our solar system over the local area
-network and plot the live data.
+gotten round to writing [code to grab live data](https://github.com/JackKelly/envoy_recorder) from our solar system over the local area
+network and [plot the live data](https://jack-kelly.com/solar/).
 
 This has been a good excuse to try out publishing a simple dashboard
 without an SQL database or a server. The visualisation is a [Marimo](https://marimo.io) app, exported as
